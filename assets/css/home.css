@@ -1,0 +1,74 @@
+/* Carousel styling */
+.carousel {
+    margin-bottom: 4rem;
+  }
+
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
+  .carousel-item {
+    height: 32rem;
+  }
+
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+    object-fit: cover;
+  }
+
+  /* Text overlay if needed (optional) */
+  .overlay-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  .overlay-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .navbar-brand img {
+      height: 40px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .navbar-brand img {
+      height: 35px;
+    }
+  }
+
+  /* Active nav link underline */
+  .navbar-nav .nav-item.active .nav-link {
+    position: relative;
+    color: #000;
+  }
+
+  .navbar-nav .nav-item.active .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+  }
+
+  /* Optional: bump up caption size for md+ screens */
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  }
