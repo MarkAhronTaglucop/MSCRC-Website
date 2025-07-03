@@ -81,3 +81,106 @@
   color: white;
   font-weight: bold;
 }
+/* Profile Cards */
+/* Add top-right corner accent */
+/* Profile Card with Animated, Rounded Top-Right Accent */
+/* ——— Card shell ——— */
+.profile-card {
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+  height: 45vh;
+}
+
+.profile-card:focus-visible {
+  outline: 2px solid #0d6efd; /* keyboard focus */
+}
+
+/* accent corner */
+.profile-card::before,
+.profile-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #000;
+  transition: 0.5s ease;
+}
+
+.profile-card::before {
+  width: 50px;
+  height: 5px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 5px;
+}
+
+.profile-card::after {
+  width: 5px;
+  height: 50px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 5px;
+}
+
+.profile-card:hover::before,
+.profile-card.active::before {
+  height: 8px;
+}
+
+.profile-card:hover::after,
+.profile-card.active::after {
+  width: 8px;
+}
+
+/* shrink top content on hover */
+.profile-card:hover .image-container img,
+.profile-card.active .image-container img {
+  width: 20% !important;
+  transition: width 0.5s ease;
+}
+
+.profile-card:hover h3,
+.profile-card.active h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  transition: font-size 0.5s ease;
+}
+
+.profile-card:hover .title,
+.profile-card.active .title,
+.profile-card:hover span:not(.title),
+.profile-card.active span:not(.title) {
+  font-size: 0.85rem;
+  transition: font-size 0.5s ease;
+}
+
+/* updated hidden-content */
+.hidden-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  font-size: 0.85rem;
+  z-index: 1;
+}
+
+/* reveal on hover or active */
+.profile-card:hover .hidden-content,
+.profile-card.active .hidden-content {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* optional: small "press" effect */
+.profile-card:hover {
+  transform: translateY(-4px);
+}
