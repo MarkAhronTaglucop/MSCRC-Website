@@ -31,35 +31,23 @@
       background-color: #000;
     }
 
+.page-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
 
-        /* Banner style */
-    .page-banner {
-      background: url('assets/images/homepage/faculty-banner.jpg') center center/cover no-repeat;
-      height: 300px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .page-banner::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.4); /* dark overlay for contrast */
-      z-index: 1;
-    }
-
-    .page-banner h1 {
-      z-index: 2;
-      color: #fff;
-      font-size: 3rem;
-      font-weight: bold;
-    }
+.page-banner h1 {
+  z-index: 2;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
 
     /* Content area overlaps banner naturally on scroll */
     .content-section {

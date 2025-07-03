@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSU Math</title>
+    <title>CSU Physics</title>
     <link rel="stylesheet" href="assets/css/facultyProfile.css">
     <!-- Bootstrap 4.6.2 CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    />
-  </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <style>
+        .page-banner {
+            background: url('assets/images/homepage/FMBanner.png') no-repeat center;
+            background-size: cover;
+            height: 45vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 56px; /* Adjust depending on navbar height */
+            z-index: 1; /* Make sure it stays above other elements */
+        }
 
-  <body>
+        .page-banner h1 {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="assets/images/homepage/CSUicon.jpg" alt="CSU Logo" />
-        <span class="lead">CSU MATH</span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="assets/images/homepage/CSUicon.jpg" alt="CSU Logo" />
+            <span class="lead">CSU PHYSICS</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto font-weight-bold">
-          <li class="nav-item">
-            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About the Department</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Programs Offering</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Faculty Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News and Updates</a>
-          </li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About the Department</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Programs Offering</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Faculty Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News and Updates</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-  <div class="page-banner">
-    <h1>FACULTY AND STAFF</h1>
-  </div>
-
-  <!-- Main Content -->
-  <div class="content-section container">
-    <p class="text-muted">Click on the faculty member's name to view his/her profile.</p>
-    <h4 class="font-weight-bold">Department Chairperson</h4>
-
-    <div class="row align-items-center mt-4">
-      <div class="col-md-4 text-center">
-        <img src="assets/images/faculty/jessa.jpg" alt="Jessa Mae" class="img-fluid rounded shadow" />
-        <p class="mt-2 small">jessamae.laz09@gmail.com</p>
-      </div>
-      <div class="col-md-8">
-        <h3 class="text-success border-bottom pb-2">JESSA MAE T. LAZARTE</h3>
-        <!-- Add any expandable bio or description here -->
-      </div>
+    <!-- Sticky Banner -->
+    <div class="page-banner">
+        <h1>FACULTY AND STAFF</h1>
     </div>
-  </div>
+
+    <!-- Main Content -->
+    <div class="content-section container-fluid my-5">
+        <p class="text-muted">Click on the faculty member's name to view his/her profile.</p>
+        <h4 class="font-weight-bold">Department Chairperson</h4>
+
+        <div class="row align-items-center mt-4">
+            <div class="col-md-4 text-center">
+                <img src="assets/images/faculty/jessa.jpg" alt="Jessa Mae" class="img-fluid rounded shadow" />
+                <p class="mt-2 small">jessamae.laz09@gmail.com</p>
+            </div>
+            <div class="col-md-8">
+                <h3 class="text-success border-bottom pb-2">JESSA MAE T. LAZARTE</h3>
+                <!-- Optional bio section -->
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap JS & dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
+
 </html>
