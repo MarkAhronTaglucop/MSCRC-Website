@@ -144,15 +144,18 @@
   transition: width 0.5s ease;
 }
 
-.profile-card:hover h3,
-.profile-card.active h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.25rem;
+.profile-card:hover h4,
+.profile-card.active h4{
+  font-size: 1rem;
   transition: font-size 0.5s ease;
 }
 
 .profile-card:hover .title,
-.profile-card.active .title,
+.profile-card.active .title{
+    font-size: .7rem;
+  transition: font-size 0.5s ease;
+}
+
 .profile-card:hover span:not(.title),
 .profile-card.active span:not(.title) {
   font-size: 0.85rem;
@@ -183,4 +186,17 @@
 /* optional: small "press" effect */
 .profile-card:hover {
   transform: translateY(-4px);
+}
+
+@media (max-width: 767.98px) {
+  /* shrink top content on hover */
+.profile-card:hover .image-container img,
+.profile-card.active .image-container img {
+  width: 35% !important;
+  transition: width 0.5s ease;
+}
+
+.profile-card:not(.active) .title {
+  margin-top: 10px;
+}
 }

@@ -73,31 +73,34 @@
 
     <!-- Main Content -->
     <!-- Content wrapper: smaller margin‑top on lg+ screens -->
-<section class="content-section container-fluid pt-4 pt-lg-2 pb-5">
+    <section class="content-section container-fluid pt-4 pt-lg-2 pb-5">
+      <p class="text-muted mb-2">
+        Click on the faculty member's name to view his/her profile.
+      </p>
+      <h2 class="fw-bold mb-4">Instructors</h2>
 
-  <p class="text-muted mb-2">
-    Click on the faculty member's name to view his/her profile.
-  </p>
-  <h2 class="fw-bold mb-4">Instructors</h2>
+      <!-- Let the row grow naturally; give vertical gap (gy‑4) instead of fixed height -->
+      <div class="row gy-4">
+        <!-- one card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card profile-card pt-3" data-card tabindex="0">
+            <div class="image-container text-center mb-3">
+              <img
+                src="/assets/images/facultyprofiles/apdorachel.jpg"
+                alt="Apdo, Rachel B."
+                class="w-50"
+              />
+            </div>
 
-  <!-- Let the row grow naturally; give vertical gap (gy‑4) instead of fixed height -->
-  <div class="row gy-4">
+            <h4 class="mb-0">Apdo, Rachel B.</h4>
+            <div class="schooltitle">
+              <span class="title d-block">Instructor I</span>
+              <span class="title">Caraga State University</span>
+            </div>
 
-    <!-- one card -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <article class="card profile-card pt-3" data-card tabindex="0">
-        <div class="image-container text-center mb-2">
-          <img src="/assets/images/facultyprofiles/apdorachel.jpg"
-               alt="Apdo, Rachel B." class="w-50" />
-        </div>
-
-        <h3 class="mb-0">Apdo, Rachel B.</h3>
-        <span class="title d-block">Instructor I</span>
-        <span>Caraga State University</span>
-
-        <!-- Hidden part -->
-        <div class="hidden-content row justify-content-center">
-          <div class="row justify-content-center gap-4">
+            <!-- Hidden part -->
+            <div class="hidden-content row justify-content-center">
+              <div class="row justify-content-center gap-4">
                 <div class="col-auto">
                   <a href="#" class="social-icon text-dark fs-3">
                     <i class="fa fa-envelope"></i>
@@ -113,21 +116,19 @@
                     <i class="fa fa-facebook"></i>
                   </a>
                 </div>
-          </div>
-          <button class="btn btn-dark w-100">
-            <span>MS in Mathematics (CSU, 2019)</span><br />
-            <span>BS in Mathematics (CSU, 2014)</span><br />
-            <span>Specialization: Mathematical Modeling</span>
-          </button>
+              </div>
+              <button class="btn btn-dark w-100">
+                <span>MS in Mathematics (CSU, 2019)</span><br />
+                <span>BS in Mathematics (CSU, 2014)</span><br />
+                <span>Specialization: Mathematical Modeling</span>
+              </button>
+            </div>
+          </article>
         </div>
-      </article>
-    </div>
 
-    <!-- …repeat the same markup for every other member… -->
-
-  </div>
-</section>
-
+        <!-- …repeat the same markup for every other member… -->
+      </div>
+    </section>
 
     <!-- Bootstrap JS & dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -135,20 +136,19 @@
   </body>
 
   <script>
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('[data-card]').forEach(card => {
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("[data-card]").forEach((card) => {
+        // click / tap toggles
+        card.addEventListener("click", () => card.classList.toggle("active"));
 
-    // click / tap toggles
-    card.addEventListener('click', () => card.classList.toggle('active'));
-
-    // keyboard (Enter or Space) toggles for accessibility
-    card.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        card.click();
-      }
+        // keyboard (Enter or Space) toggles for accessibility
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            card.click();
+          }
+        });
+      });
     });
-  });
-});
   </script>
 </html>
