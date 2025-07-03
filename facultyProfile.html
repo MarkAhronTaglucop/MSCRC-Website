@@ -80,74 +80,2382 @@
       <h2 class="fw-bold mb-4">Instructors</h2>
 
       <!-- Let the row grow naturally; give vertical gap (gy‑4) instead of fixed height -->
-      <div class="row gy-4">
-        <!-- one card -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="card profile-card pt-3" data-card tabindex="0">
-            <div class="image-container text-center mb-3">
-              <img
-                src="/assets/images/facultyprofiles/apdorachel.jpg"
-                alt="Apdo, Rachel B."
-                class="w-50"
-              />
+      <div class="cards-grid">
+        <!-- Profile Card 1 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Apdo, Rachel B."
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/apdorachel.jpg"
+                  alt="Apdo, Rachel B."
+                />
+              </div>
             </div>
 
-            <h4 class="mb-0">Apdo, Rachel B.</h4>
-            <div class="schooltitle">
-              <span class="title d-block">Instructor I</span>
-              <span class="title">Caraga State University</span>
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Apdo, Rachel B.</h3>
+              <p class="position">Instructor I</p>
+              <p class="institution">Caraga State University</p>
             </div>
 
-            <!-- Hidden part -->
-            <div class="hidden-content row justify-content-center">
-              <div class="row justify-content-center gap-4">
-                <div class="col-auto">
-                  <a href="#" class="social-icon text-dark fs-3">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </div>
-                <div class="col-auto">
-                  <a href="#" class="social-icon text-dark fs-3">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </div>
-                <div class="col-auto">
-                  <a href="#" class="social-icon text-dark fs-3">
-                    <i class="fa fa-facebook"></i>
-                  </a>
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:rachel.apdo@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">MS in Mathematics (CSU, 2019)</div>
+                <div class="education-item">BS in Mathematics (CSU, 2014)</div>
+                <div class="specialization">
+                  Specialization: Mathematical Modeling
                 </div>
               </div>
-              <button class="btn btn-dark w-100">
-                <span>MS in Mathematics (CSU, 2019)</span><br />
-                <span>BS in Mathematics (CSU, 2014)</span><br />
-                <span>Specialization: Mathematical Modeling</span>
-              </button>
             </div>
-          </article>
-        </div>
+          </div>
+        </article>
 
-        <!-- …repeat the same markup for every other member… -->
+        <!-- Profile Card 2 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Engalan-Quisto, Genevieve B."
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/genibib.jpg"
+                  alt="Engalan-Quisto, Genevieve B."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Engalan-Quisto, Genevieve B.</h3>
+              <p class="position">Instructor I, PIWO, Math Dep't</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:genevieve.quisto@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">MS Mathematics (CSU, CAR)</div>
+                <div class="education-item">BS Mathematics (CSU, 2016)</div>
+                <div class="education-item">
+                  Diploma in Mechanical Engineering Technology (MSU-IIT, 2012)
+                </div>
+                <div class="specialization">
+                  Specialization: Linear Programming
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 3 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/lingojunar.jpg"
+                  alt="
+Lingo, Junar T."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Lingo, Junar T.</h3>
+              <p class="position">Instructor I, CMNS Extension Coordinator</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">MS in Mathematics (CSU, 2019)</div>
+                <div class="education-item">
+                  BS in Mathematics Major in Applied Statistics (CSU,2013)
+                </div>
+                <div class="specialization">
+                  Specialization: Mathematical Modeling, Statistics
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 4 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/milburn.jpg"
+                  alt="Milburn"
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Macalos, Milburn O.</h3>
+              <p class="position">Instructor I</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">MS in Mathematics (CSU, 2021)</div>
+                <div class="education-item">BS in Mathematics (CSU, 2015)</div>
+                <div class="specialization">Specialization: Copula</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 5 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/kayepajaron.jpg"
+                  alt="kayepajaron"
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Pajaron, Kaye Y.</h3>
+              <p class="position">Instructor I</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">MS Mathematics (CSU, CAR)</div>
+                <div class="education-item">BS Mathematics (MSU-IIT, 2016)</div>
+                <div class="specialization">Specialization: Graph Theory</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 6 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/rendeza.jpg"
+                  alt="rendeza"
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Rendeza, Jeriel S.</h3>
+              <p class="position">Instructor I</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">MS in Mathematics (CSU, 2019)</div>
+                <div class="education-item">
+                  BS in Mathematics (MSU-Main, 2014)
+                </div>
+                <div class="specialization">
+                  Specialization: Mathematical Modeling
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 7 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/jantinio.jpg"
+                  alt="Tinio, Jan Niño G."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Tinio, Jan Niño G.</h3>
+              <p class="position">Instructor II, Technical Assistant, QuAMS</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  MS in Statistics (MSU-IIT, 2016)
+                </div>
+                <div class="education-item">
+                  BS in Statistics (MSU-IIT, 2014)
+                </div>
+                <div class="specialization">
+                  Specialization: Statistics, Time Series Modelling, Bayesian
+                  Analysis
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 8 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/sheilamae.jpg"
+                  alt="Sheila Rae E. Permanes"
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Sheila Rae E. Permanes</h3>
+              <p class="position">Instructor III, (On Study Leave)</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PHD in Mathematics (University of Picardie Jules Verne,
+                  France, Ongoing)
+                </div>
+                <div class="education-item">MS in Mathematics (CSU, 2016)</div>
+                <div class="education-item">BS in Mathematics (CSU, 2011)</div>
+                <div class="specialization">Specialization: Topology</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 9 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/airish.jpg"
+                  alt="Airish P. Pelemeniano"
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Airish P. Pelemeniano</h3>
+              <p class="position">Instructor III, Member, QuAMS Core Group</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">MS in Mathematics (CSU, 2016)</div>
+                <div class="education-item">BS in Mathematics (CSU, 2010)</div>
+                <div class="specialization">
+                  Specialization: Topology, Graph Theory
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 10 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/abigael.jpg"
+                  alt="Dangate, Abigael J."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Dangate, Abigael J.</h3>
+              <p class="position">Instructor III</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">MS Mathematics (CSU, 2016)</div>
+                <div class="education-item">
+                  BS Mathematics (MSU Main, 2004)
+                </div>
+                <div class="specialization">Specialization: Copula</div>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
+    <hr />
+    <section class="content-section container-fluid pt-4 pt-lg-2 pb-5">
+      <h2 class="fw-bold mb-4">Assistant Professors</h2>
 
+      <!-- Let the row grow naturally; give vertical gap (gy‑4) instead of fixed height -->
+      <div class="cards-grid">
+        <!-- Profile Card 1 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Apdo, Rachel B."
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/breixagua.jpg"
+                  alt="Agua, Breix Michael G."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Agua, Breix Michael G.</h3>
+              <p class="position">Assistant Professor I</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:rachel.apdo@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">MS in Mathematics (CSU, 2016)</div>
+                <div class="education-item">BS in Mathematics (CSU, 2012)</div>
+                <div class="specialization">
+                  Specialization: Topology, Applied Statistics, Mathematics
+                  Education
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 2 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Engalan-Quisto, Genevieve B."
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/arlanpogi.jpg"
+                  alt="Arlan, Erwin N."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Arlan, Erwin N.</h3>
+              <p class="position">Assistant Professor I</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:genevieve.quisto@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  BS Civil Engineering (SJIT, 2021)
+                </div>
+                <div class="education-item">
+                  MS in Mathematics (MSU Main 2015)
+                </div>
+                <div class="education-item">
+                  BS in Mathematics (MSU Main 2010)
+                </div>
+                <div class="specialization">
+                  Specialization: Number Theory, Combinatorics
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 3 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/burdeoskaren.jpg"
+                  alt="Burdeos, Karen B."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Burdeos, Karen B.</h3>
+              <p class="position">Assistant Professor I, (On Study-Leave)</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PhD in Applied Mathematics (University of Picardie Jules
+                  Verne, France, Ongoing)
+                </div>
+                <div class="education-item">MS Statistics (UPLB, 2014)</div>
+                <div class="education-item">BS Mathematics (CSU, 2011)</div>
+                <div class="specialization">
+                  Specialization: Statistics, Environmental Statistics,
+                  Educational Statistics
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 4 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/Cuaresma.jpg"
+                  alt="Cuaresma, Edilberto  Jr. C."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Cuaresma, Edilberto Jr. C.</h3>
+              <p class="position">Assistant Professor I</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">PhD in Mathematics (ADMU, CAR)</div>
+                <div class="education-item">MS in Mathematics (CSU, 2014)</div>
+                <div class="education-item">
+                  BS in Mathematics (MSU Main, 2007)
+                </div>
+                <div class="specialization">Specialization: Graph Theory</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 5 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/macalalag.jpg"
+                  alt="Macalalag, Jay Michael R."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Macalalag, Jay Michael R.</h3>
+              <p class="position">
+                Assistant Professor II, Graduate Programs Coordinator,
+                Department of Mathematics
+              </p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PhD in Mathematics (ADMU, 2019)
+                </div>
+                <div class="education-item">MS in Mathematics (CSU, 2013)</div>
+                <div class="education-item">BS in Mathematics (CSU, 2010)</div>
+                <div class="specialization">
+                  Specialization: Mathematical Modeling, Topology
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 6 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/mentuda.jpg"
+                  alt="Mentuda, Cheryl Q."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Mentuda, Cheryl Q.</h3>
+              <p class="position">Assistant Professor III</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PHD in Mathematics (University of Picardie Jules Verne,
+                  France, 2022)
+                </div>
+                <div class="education-item">
+                  MS in Mathematics (MSU Main 2015)
+                </div>
+                <div class="education-item">
+                  BS in Mathematics (MSU Main 2010)
+                </div>
+                <div class="specialization">
+                  Specialization: Topology, Mathematical Modeling
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 7 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/nepa.jpg"
+                  alt="Nepa, Marilou T."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Nepa, Marilou T.</h3>
+              <p class="position">Assistant Professor III</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PhD in Mathematics (MSU-IIT, CAR)
+                </div>
+                <div class="education-item">MS in Mathematics (CSU, 2016)</div>
+                <div class="education-item">
+                  BS in Mathematics (MSU Main, 2000)
+                </div>
+                <div class="specialization">Specialization: Copula</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 8 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/padecio.jpg"
+                  alt="Padecio, Angela Fel A."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Padecio, Angela Fel A.</h3>
+              <p class="position">Assistant Professor III, Director, MSCRC</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">PhD in Statistics (UPLB, CAR)</div>
+                <div class="education-item">
+                  MS in Statistics (MSU IIT, 2013)
+                </div>
+                <div class="education-item">
+                  BS in Mathematics (MSU IIT, 2011)
+                </div>
+                <div class="specialization">Specialization: Statistics</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <hr />
+    <section class="content-section container-fluid pt-4 pt-lg-2 pb-5">
+      <h2 class="fw-bold mb-4">Associate Professors</h2>
+
+      <!-- Let the row grow naturally; give vertical gap (gy‑4) instead of fixed height -->
+      <div class="cards-grid">
+        <!-- Profile Card 1 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Apdo, Rachel B."
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/albiajake.jpg"
+                  alt="Albia, Jake A."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Albia, Jake A.</h3>
+              <p class="position">
+                Associate Professor I, Coordinator, CSU-Bayugan City Graduate
+                Extension Program
+              </p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:rachel.apdo@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">PhD in Mathematics (ADMU, CAR)</div>
+                <div class="education-item">
+                  MS in Mathematics (MSU IIT, 2006)
+                </div>
+                <div class="education-item">
+                  BS in Mathematics (MSU IIT, 2003)
+                </div>
+                <div class="specialization">Specialization: Graph Theory</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 2 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Engalan-Quisto, Genevieve B."
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/merliza.jpg"
+                  alt="Libao, Merliza F."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Libao, Merliza F.</h3>
+              <p class="position">Associate Professor I, Director, OAS</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:genevieve.quisto@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PhD in Math Sci - Applied Mathematics (USTP, 2018)
+                </div>
+                <div class="education-item">
+                  MS in Mathematics (UP Baguio, 2008 )
+                </div>
+                <div class="education-item">
+                  BS in Electrical Engineering (DMMSU, 1998)
+                </div>
+                <div class="specialization">
+                  Specialization: Dynamical System
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 3 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/latayada.jpg"
+                  alt="Latayada, Mary Joy R."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Latayada, Mary Joy R.</h3>
+              <p class="position">
+                Associate Professor II, Chairperson, Mathematics Department
+              </p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PhD in Mathematics (MSU IIT, 2019)
+                </div>
+                <div class="education-item">
+                  MS in Statistics (MSU IIT, 2014)
+                </div>
+                <div class="education-item">
+                  BS in Mathematics (MSU Main, 2000)
+                </div>
+                <div class="specialization">Specialization: Combinatorics</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 4 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/domingo.jpg"
+                  alt="Domingo, Job H."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Domingo, Job H.</h3>
+              <p class="position">Associate Professor IV </p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">PhD in Mathematics (MSU IIT, 2013 )</div>
+                <div class="education-item">MS in Mathematics (DLSU, 1997)</div>
+                <div class="education-item">
+                  BS in Mathematics (MSU Main, 1990)
+                </div>
+                <div class="specialization">Specialization: Linear Programming</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 5 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/ocarez.jpg"
+                  alt="Ocarez, Felix R."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Ocarez, Felix R.</h3>
+              <p class="position">
+                Associate Professor V, Chief, Presidential Management Staff
+              </p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PhD in Educational Management and Supervision (CSU, 2013)
+                </div>
+                <div class="education-item">MS in Mathematics (MSU IIT, 2002)</div>
+                <div class="education-item">BS in Mathematics (MSU Main, 1989)</div>
+                <div class="specialization">
+                  Specialization: Graph Theory, Mathematics Education
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <hr>
+    <section class="content-section container-fluid pt-4 pt-lg-2 pb-5">
+      <h2 class="fw-bold mb-4">Professors</h2>
+
+      <!-- Let the row grow naturally; give vertical gap (gy‑4) instead of fixed height -->
+      <div class="cards-grid">
+        <!-- Profile Card 1 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Apdo, Rachel B."
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/herrera.jpg"
+                  alt="Herrera, Fernando T."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Herrera, Fernando T.</h3>
+              <p class="position">
+                Professor I, Director, Quality Assurance Management Services
+              </p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:rachel.apdo@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">PhD in Mathematical Sciences (MUST, 2007 )</div>
+                <div class="education-item">
+                  MST in Mathematics (MUST, 2003)
+                </div>
+                <div class="education-item">
+                  BS in Civil Engineering (MSU Main, 1992)
+                </div>
+                <div class="specialization">Specialization: Mathematics Education</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 2 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Engalan-Quisto, Genevieve B."
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/jayrold.jfif"
+                  alt="Arcede, Jayrold P."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Arcede, Jayrold P.</h3>
+              <p class="position">Professor III, Director, OGIE</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:genevieve.quisto@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PostDoc in Math (UEvora, Portugal 2015)
+                </div>
+                <div class="education-item">
+                  PhD in Mathematics (Sandwich Program : ADMU & NUS, 2010)
+                </div>
+                <div class="education-item">
+                  MS in Mathematics (MSU IIT, 2004)
+                </div>
+                <div class="specialization">
+                  Specialization: Mathematical Modeling, Integration Theory
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 3 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/paluga.jpg"
+                  alt="Paluga, Rolando N."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Paluga, Rolando N.</h3>
+              <p class="position">
+                Professor V, VP for Academic Affairs
+              </p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PhD in Mathematics (MSU IIT, 2002)
+                </div>
+                <div class="education-item">
+                  MS in Mathematics (MSU IIT, 1996)
+                </div>
+                <div class="education-item">
+                  BS in Mathematics (MSU IIT, 1987)
+                </div>
+                <div class="specialization">Specialization: Graph Theory, Topology, Mathematical Modeling</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 4 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/herreramiraluna.jpg"
+                  alt="Herrera, Miraluna L."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Herrera, Miraluna L.</h3>
+              <p class="position">Professor VI, Director, Office of Curriculum and Instruction Development (OCID)</p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">PhD in Mathematics (MSU IIT, 2005)</div>
+                <div class="education-item">MS in Mathematics (MUST, 2000)</div>
+                <div class="education-item">
+                  BSEd Mathematics (MSU Main)
+                </div>
+                <div class="specialization">Specialization: Combinatorics, Mathematics Education</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile Card 5 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/palugaesamel.jpg"
+                  alt="Paluga, Esamel M."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Paluga, Esamel M.</h3>
+              <p class="position">
+                Professor VI, Dean, CMNS
+              </p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PhD in Mathematics (MSU IIT, 2005)
+                </div>
+                <div class="education-item">MS in Mathematics (MSU IIT, 1997)</div>
+                <div class="education-item">BS in Mathematics (MSU Main, 1993)</div>
+                <div class="specialization">
+                  Specialization: Graph Theory
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
     <!-- Bootstrap JS & dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 
   <script>
+    // Profile Cards Interactive Functionality
     document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll("[data-card]").forEach((card) => {
-        // click / tap toggles
-        card.addEventListener("click", () => card.classList.toggle("active"));
+      const profileCards = document.querySelectorAll(".profile-card");
 
-        // keyboard (Enter or Space) toggles for accessibility
-        card.addEventListener("keydown", (e) => {
+      profileCards.forEach((card) => {
+        // Handle click events
+        card.addEventListener("click", function () {
+          toggleCard(this);
+        });
+
+        // Handle keyboard events
+        card.addEventListener("keydown", function (e) {
           if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
-            card.click();
+            toggleCard(this);
           }
         });
+
+        // Handle focus events for accessibility
+        card.addEventListener("focus", function () {
+          this.classList.add("focused");
+        });
+
+        card.addEventListener("blur", function () {
+          this.classList.remove("focused");
+        });
+      });
+
+      function toggleCard(card) {
+        const isActive = card.classList.contains("active");
+
+        // Close all other cards
+        profileCards.forEach((otherCard) => {
+          if (otherCard !== card) {
+            otherCard.classList.remove("active");
+            otherCard.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        // Toggle current card
+        if (isActive) {
+          card.classList.remove("active");
+          card.setAttribute("aria-expanded", "false");
+        } else {
+          card.classList.add("active");
+          card.setAttribute("aria-expanded", "true");
+        }
+      }
+
+      // Close cards when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".profile-card")) {
+          profileCards.forEach((card) => {
+            card.classList.remove("active");
+            card.setAttribute("aria-expanded", "false");
+          });
+        }
+      });
+
+      // Handle escape key to close active cards
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          profileCards.forEach((card) => {
+            card.classList.remove("active");
+            card.setAttribute("aria-expanded", "false");
+          });
+        }
       });
     });
   </script>
