@@ -1,0 +1,22 @@
+.page-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .page-banner h1 {
+    z-index: 2; /* Ensures the text is above the overlay */
+    font-size: 4rem; /* Default size */
+  }
+  
+  @media (max-width: 768px) {
+    .page-banner h1 {
+      font-size: 2rem; /* Smaller size for mobile */
+    }
+  }
+  
