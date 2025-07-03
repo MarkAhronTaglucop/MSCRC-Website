@@ -80,107 +80,326 @@
 .page-banner h1 {
   color: white;
   font-weight: bold;
+}/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* Profile Cards */
-/* Add top-right corner accent */
-/* Profile Card with Animated, Rounded Top-Right Accent */
-/* ——— Card shell ——— */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  margin-bottom: 2rem;
+}
+
+.instruction {
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Profile Card */
 .profile-card {
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
-  border-radius: 8px;
-  transition: transform 0.5s ease;
-  height: 45vh;
+  outline: none;
+}
+
+.profile-card:hover,
+.profile-card.active {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.5rem);
 }
 
 .profile-card:focus-visible {
-  outline: 2px solid #0d6efd; /* keyboard focus */
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
 }
 
-/* accent corner */
-.profile-card::before,
-.profile-card::after {
-  content: '';
+/* Accent Corner */
+.accent-corner {
   position: absolute;
   top: 0;
   right: 0;
-  background: #000;
-  transition: 0.5s ease;
+  z-index: 10;
 }
 
-.profile-card::before {
-  width: 50px;
-  height: 5px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 5px;
-}
-
-.profile-card::after {
-  width: 5px;
-  height: 50px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 5px;
-}
-
-.profile-card:hover::before,
-.profile-card.active::before {
-  height: 8px;
-}
-
-.profile-card:hover::after,
-.profile-card.active::after {
-  width: 8px;
-}
-
-/* shrink top content on hover */
-.profile-card:hover .image-container img,
-.profile-card.active .image-container img {
-  width: 20% !important;
-  transition: width 0.5s ease;
-}
-
-.profile-card:hover h3,
-.profile-card.active h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.25rem;
-  transition: font-size 0.5s ease;
-}
-
-.profile-card:hover .title,
-.profile-card.active .title,
-.profile-card:hover span:not(.title),
-.profile-card.active span:not(.title) {
-  font-size: 0.85rem;
-  transition: font-size 0.5s ease;
-}
-
-/* updated hidden-content */
-.hidden-content {
+.accent-vertical {
   position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #1e293b;
+  width: 0.5rem;
+  height: 2.5rem;
+  border-bottom-left-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.accent-horizontal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #1e293b;
+  width: 2.5rem;
+  height: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.profile-card:hover .accent-vertical,
+.profile-card.active .accent-vertical {
+  width: 0.75rem;
+  height: 3rem;
+}
+
+.profile-card:hover .accent-horizontal,
+.profile-card.active .accent-horizontal {
+  width: 3rem;
+  height: 0.75rem;
+}
+
+/* Card Content */
+.card-content {
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image Container */
+.image-container {
+  margin-bottom: 1rem;
+}
+
+.image-wrapper {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.profile-card:hover .image-wrapper,
+.profile-card.active .image-wrapper {
+  transform: scale(0.75);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Basic Info */
+.basic-info {
+  transition: all 0.5s ease;
+}
+
+.profile-card:hover .basic-info,
+.profile-card.active .basic-info {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.profile-card:hover .name,
+.profile-card.active .name {
+  font-size: 1.125rem;
+}
+
+.position {
+  color: #475569;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+.profile-card:hover .position,
+.profile-card.active .position {
+  font-size: 0.875rem;
+}
+
+.institution {
+  color: #64748b;
+  font-size: 0.875rem;
+  transition: all 0.5s ease;
+}
+
+.profile-card:hover .institution,
+.profile-card.active .institution {
+  font-size: 0.75rem;
+}
+
+/* Hidden Content */
+.hidden-content {
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  background: linear-gradient(to top, #1e293b, #334155);
   color: white;
+  padding: 1rem;
+  transform: translateY(100%);
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-  font-size: 0.85rem;
-  z-index: 1;
+  transition: all 0.5s ease;
 }
 
-/* reveal on hover or active */
 .profile-card:hover .hidden-content,
 .profile-card.active .hidden-content {
+  transform: translateY(0);
   opacity: 1;
-  pointer-events: auto;
 }
 
-/* optional: small "press" effect */
-.profile-card:hover {
-  transform: translateY(-4px);
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-link {
+  color: white;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #cbd5e1;
+}
+
+/* Education Info */
+.education-info {
+  font-size: 0.875rem;
+}
+
+.education-item {
+  color: #e2e8f0;
+  margin-bottom: 0.25rem;
+}
+
+.specialization {
+  color: #cbd5e1;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .image-wrapper {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .name {
+    font-size: 1.125rem;
+  }
+
+  .position {
+    font-size: 0.875rem;
+  }
+
+  .institution {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .image-wrapper {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .hidden-content {
+    padding: 0.75rem;
+  }
+
+  .social-links {
+    gap: 0.75rem;
+  }
+
+  .social-link {
+    font-size: 1rem;
+  }
+
+  .education-info {
+    font-size: 0.75rem;
+  }
+}
+
+/* Animation for smooth transitions */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: .70s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .70s !important;
+  }
 }
