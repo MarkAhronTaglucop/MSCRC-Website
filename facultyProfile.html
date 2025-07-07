@@ -1,47 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSU Physics</title>
+    <link rel="stylesheet" href="assets/css/facultyProfile.css" />
+    <!-- Bootstrap 4.6.2 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSU Physics</title>
-  <link rel="stylesheet" href="assets/css/facultyProfile.css" />
-  <!-- Bootstrap 4.6.2 CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
+  <body>
+    <!-- Updated Navbar with slow-slide class -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/images/homepage/CSUicon.jpg" alt="CSU Logo" />
+        <span class="lead">CSU MATH</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse slow-slide" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto font-weight-bold">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About the Department</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="programs.html">Programs Offering</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="facultyProfile.html">Faculty Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News and Updates</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<body>
-  <!-- Updated Navbar with slow-slide class -->
-  <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #E3E3E3;">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="assets/images/homepage/CSUicon.jpg" alt="CSU Logo" />
-      <span class="lead">CSU MATH</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse slow-slide" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto font-weight-bold">
-        <li class="nav-item">
-          <a class="nav-link" href="home.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About the Department</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="programs.html">Programs Offering</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="facultyProfile.html">Faculty Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">News and Updates</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<!-- Page Banner -->
+    <header class="page-banner" style="background-image: url('assets/images/facultyprofiles/banner3.jfif');">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 d-flex flex-column justify-content-end align-items-center text-center">
+            <div class="page-banner-content pb-5 px-3">
+              <h1 class="display-3 fw-bold text-white">FACULTY PROFILE</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- Main Content -->
     <!-- Content wrapper: smaller margin‑top on lg+ screens -->
@@ -1911,13 +1938,20 @@
     <section class="content-section container-fluid pt-4 pt-lg-2 pb-5">
       <h2 class="fw-bold mb-4">Instructors</h2>
 
-  <!-- Page Banner -->
-  <header class="page-banner" style="background-image: url('assets/images/about/FMBanner.png');">
-    <div class="container h-100">
-      <div class="row h-100">
-        <div class="col-12 d-flex flex-column justify-content-end align-items-center text-center">
-          <div class="page-banner-content pb-5 px-3">
-            <h1 class="display-3 fw-bold text-white">ABOUT THE DEPARTMENT</h1>
+      <!-- Let the row grow naturally; give vertical gap (gy‑4) instead of fixed height -->
+      <div class="cards-grid">
+        <!-- Profile Card 1 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Apdo, Rachel B."
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
           </div>
 
           <div class="card-content">
@@ -2383,141 +2417,75 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 
-      <!-- Profile Card 5 -->
-      <article class="profile-card" tabindex="0" role="button" aria-expanded="false"
-        aria-label="View profile for Sample Faculty Member">
-        <!-- Top-right accent -->
-        <div class="accent-corner">
-          <div class="accent-vertical"></div>
-          <div class="accent-horizontal"></div>
-        </div>
+  <script>
+    // Profile Cards Interactive Functionality
+    document.addEventListener("DOMContentLoaded", () => {
+      const profileCards = document.querySelectorAll(".profile-card");
 
-        <div class="card-content">
-          <!-- Image Container -->
-          <div class="image-container">
-            <div class="image-wrapper">
-              <img src="/assets/images/facultyprofiles/palugaesamel.jpg" alt="Paluga, Esamel M." />
-            </div>
-          </div>
-
-          <!-- Basic Info -->
-          <div class="basic-info">
-            <h3 class="name">Paluga, Esamel M.</h3>
-            <p class="position">Professor VI, Dean, CMNS</p>
-            <p class="institution">Caraga State University</p>
-          </div>
-
-          <!-- Hidden Content -->
-          <div class="hidden-content">
-            <!-- Social Links -->
-            <div class="social-links">
-              <a href="mailto:sample@csu.edu.ph" class="social-link" aria-label="Send email"
-                onclick="event.stopPropagation()">
-                <i class="fa fa-envelope"></i>
-              </a>
-              <a href="#" class="social-link" aria-label="LinkedIn profile" onclick="event.stopPropagation()"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-linkedin"></i>
-              </a>
-              <a href="#" class="social-link" aria-label="Facebook profile" onclick="event.stopPropagation()"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </div>
-
-            <!-- Education Info -->
-            <div class="education-info">
-              <div class="education-item">
-                PhD in Mathematics (MSU IIT, 2005)
-              </div>
-              <div class="education-item">
-                MS in Mathematics (MSU IIT, 1997)
-              </div>
-              <div class="education-item">
-                BS in Mathematics (MSU Main, 1993)
-              </div>
-              <div class="specialization">Specialization: Graph Theory</div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-  <!-- Bootstrap JS & dependencies -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-<script>
-  // Profile Cards Interactive Functionality
-  document.addEventListener("DOMContentLoaded", () => {
-    const profileCards = document.querySelectorAll(".profile-card");
-
-    profileCards.forEach((card) => {
-      // Handle click events
-      card.addEventListener("click", function () {
-        toggleCard(this);
-      });
-
-      // Handle keyboard events
-      card.addEventListener("keydown", function (e) {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
+      profileCards.forEach((card) => {
+        // Handle click events
+        card.addEventListener("click", function () {
           toggleCard(this);
+        });
+
+        // Handle keyboard events
+        card.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggleCard(this);
+          }
+        });
+
+        // Handle focus events for accessibility
+        card.addEventListener("focus", function () {
+          this.classList.add("focused");
+        });
+
+        card.addEventListener("blur", function () {
+          this.classList.remove("focused");
+        });
+      });
+
+      function toggleCard(card) {
+        const isActive = card.classList.contains("active");
+
+        // Close all other cards
+        profileCards.forEach((otherCard) => {
+          if (otherCard !== card) {
+            otherCard.classList.remove("active");
+            otherCard.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        // Toggle current card
+        if (isActive) {
+          card.classList.remove("active");
+          card.setAttribute("aria-expanded", "false");
+        } else {
+          card.classList.add("active");
+          card.setAttribute("aria-expanded", "true");
+        }
+      }
+
+      // Close cards when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".profile-card")) {
+          profileCards.forEach((card) => {
+            card.classList.remove("active");
+            card.setAttribute("aria-expanded", "false");
+          });
         }
       });
 
-      // Handle focus events for accessibility
-      card.addEventListener("focus", function () {
-        this.classList.add("focused");
-      });
-
-      card.addEventListener("blur", function () {
-        this.classList.remove("focused");
-      });
-    });
-
-    function toggleCard(card) {
-      const isActive = card.classList.contains("active");
-
-      // Close all other cards
-      profileCards.forEach((otherCard) => {
-        if (otherCard !== card) {
-          otherCard.classList.remove("active");
-          otherCard.setAttribute("aria-expanded", "false");
+      // Handle escape key to close active cards
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          profileCards.forEach((card) => {
+            card.classList.remove("active");
+            card.setAttribute("aria-expanded", "false");
+          });
         }
       });
-
-      // Toggle current card
-      if (isActive) {
-        card.classList.remove("active");
-        card.setAttribute("aria-expanded", "false");
-      } else {
-        card.classList.add("active");
-        card.setAttribute("aria-expanded", "true");
-      }
-    }
-
-    // Close cards when clicking outside
-    document.addEventListener("click", (e) => {
-      if (!e.target.closest(".profile-card")) {
-        profileCards.forEach((card) => {
-          card.classList.remove("active");
-          card.setAttribute("aria-expanded", "false");
-        });
-      }
     });
-
-    // Handle escape key to close active cards
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        profileCards.forEach((card) => {
-          card.classList.remove("active");
-          card.setAttribute("aria-expanded", "false");
-        });
-      }
-    });
-  });
-</script>
-
+  </script>
 </html>
