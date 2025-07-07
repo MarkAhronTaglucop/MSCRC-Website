@@ -95,53 +95,29 @@
   /* =======================================
      SEMESTER & TABLE STYLES
      ======================================= */
-  
-  /* Semester Header Colors */
-  .semester-header-blue {
-    background-color: #0d6efd;
-  }
-  
-  .semester-header-green {
-    background-color: #198754;
-  }
-  
-  .semester-header-purple {
-    background-color: #6f42c1;
-  }
-  
-  .semester-header-orange {
-    background-color: #fd7e14;
-  }
+
   
   /* Table Total Rows */
   .table-total-row {
-    background-color: rgba(13, 110, 253, 0.1);
-  }
-  
-  .table-total-row-green {
-    background-color: rgba(25, 135, 84, 0.1);
-  }
-  
-  .table-total-row-purple {
-    background-color: rgba(111, 66, 193, 0.1);
-  }
-  
-  .table-total-row-orange {
-    background-color: rgba(253, 126, 20, 0.1);
+    background-color: rgba(61, 65, 70, 0.1);
   }
   
   /* =======================================
      MILESTONE STYLES
      ======================================= */
   
-  .milestone-badge {
-    background-color: white;
-    border: 2px solid #dee2e6;
-    color: #495057;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-weight: 600;
-  }
+     .milestone-badge {
+      background-color: white;
+      border: 1px solid #dee2e6;
+      color: #212529;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0; /* prevents badge from shrinking */
+      line-height: 1.4;
+    }
   
   /* =======================================
      STATISTICS AND TESTIMONIALS
