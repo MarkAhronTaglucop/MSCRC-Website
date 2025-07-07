@@ -1,34 +1,26 @@
-.page-banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
-    z-index: 1;
-  }
-  
-  .page-banner h1 {
-    z-index: 2; /* Ensures the text is above the overlay */
-    font-size: 4rem; /* Default size */
-  }
-  
-  @media (max-width: 768px) {
-    .page-banner h1 {
-      font-size: 2rem; /* Smaller size for mobile */
-    }
-  }
-  
+/* ================================
+    BODY STYLES
+================================= */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #fafafa;
+}
+
+
+/* ================================
+    NAVIGATION STYLES
+================================= */
+
 /* Smooth slide animation for navbar collapse */
 .navbar-collapse {
   transition: all 0.3s ease-in-out;
-  max-height: 0;
+  max-height: 500px;
   overflow: hidden;
 }
 
 .navbar-collapse.show {
-  max-height: 500px; /* Adjust based on your menu height */
+  max-height: 1000px; /* Adjust based on your menu height */
 }
 
 .navbar-collapse.collapsing {
@@ -38,7 +30,7 @@
 
 /* For slower animation, increase duration */
 .navbar-collapse.slow-slide {
-  transition: all 0.6s ease-in-out;
+  transition: max-height 0.6s ease-in-out;
 }
 
 .navbar-collapse.slow-slide.collapsing {
@@ -78,3 +70,62 @@
   height: 3px;
   background-color: #000;
 }
+
+
+/* ================================
+    BANNER STYLES
+================================= */
+
+/* Banner container with sticky positioning */
+.page-banner {
+  position: sticky;
+  top: 0;
+  z-index: 1; /* Ensures the background stays below other content */
+  background: url('assets/images/about/FMBanner.png') no-repeat center;
+  background-size: cover;
+  height: 45vh; /* Controls the height of the banner */
+  padding-top: 56px; /* Adds spacing from the top */
+}
+
+/* Dark overlay for better text visibility */
+.page-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 0; /* Ensures the overlay is below the content */
+}
+
+/* Banner heading styling */
+.page-banner h1 {
+  z-index: 2; /* Ensures the heading is above the overlay */
+  font-size: 4rem; /* Default font size */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .page-banner h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+}
+
+/* Container for the banner content (aligns text to the bottom) */
+.page-banner-content {
+  position: relative;
+  z-index: 2; /* Above the overlay */
+  height: 100%; /* Fill the height of the banner */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Aligns the heading at the bottom */
+  padding: 3rem; /* Adds padding around the text */
+}
+
+
+/* ================================
+    OTHER STYLES (General Page Styles)
+================================= */
+
+/* This can include other general styles for the page content, forms, buttons, etc. */

@@ -1,13 +1,21 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #FAFAFA;
+}
+
+
+
 
 /* Smooth slide animation for navbar collapse */
 .navbar-collapse {
   transition: all 0.3s ease-in-out;
-  max-height: 0;
+  max-height: 500px;
   overflow: hidden;
 }
 
 .navbar-collapse.show {
-  max-height: 500px; /* Adjust based on your menu height */
+  max-height: 1000px; /* Adjust based on your menu height */
 }
 
 .navbar-collapse.collapsing {
@@ -17,7 +25,7 @@
 
 /* For slower animation, increase duration */
 .navbar-collapse.slow-slide {
-  transition: all 0.6s ease-in-out;
+  transition: max-height 0.6s ease-in-out;
 }
 
 .navbar-collapse.slow-slide.collapsing {
@@ -57,6 +65,8 @@
   height: 3px;
   background-color: #000;
 }
+
+
 
 .page-banner::before {
   content: "";
