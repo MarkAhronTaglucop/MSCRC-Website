@@ -1,4 +1,10 @@
- /* Full-height carousel image */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #FAFAFA;
+
+  
+}/* Full-height carousel image */
     .carousel,
     .carousel-item,
     .carousel-item img {
