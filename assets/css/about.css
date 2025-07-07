@@ -12,7 +12,32 @@ html, body {
     NAVIGATION STYLES
 ================================= */
 
-/* Navbar brand image styling */
+/* Smooth slide animation for navbar collapse */
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.navbar-collapse.show {
+  max-height: 1000px; /* Adjust based on your menu height */
+}
+
+.navbar-collapse.collapsing {
+  transition: all 0.3s ease-in-out;
+  max-height: 500px;
+}
+
+/* For slower animation, increase duration */
+.navbar-collapse.slow-slide {
+  transition: max-height 0.6s ease-in-out;
+}
+
+.navbar-collapse.slow-slide.collapsing {
+  transition: all 0.6s ease-in-out;
+}
+
+/* Your existing styles */
 .navbar-brand img {
   height: 50px;
   margin-right: 10px;

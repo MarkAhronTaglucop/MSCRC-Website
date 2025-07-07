@@ -1,63 +1,44 @@
-html, body {
+/* =======================================
+   BODY ADJUSTMENTS
+   ======================================= */
+html,
+body {
   height: 100%;
   margin: 0;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
+}
 
-  
-}/* Full-height carousel image */
-    .carousel,
-    .carousel-item,
-    .carousel-item img {
-      height: 100vh;
-    }
+/* =======================================
+     NAVIGATION CSS
+     ======================================= */
 
-    .carousel-item img {
-      object-fit: cover;
-      width: 100%;
-    }
+/* Smooth slide animation for navbar collapse */
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+  max-height: 500px;
+  overflow: hidden;
+}
 
-    /* Dark overlay */
-    .carousel-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-    }
+.navbar-collapse.show {
+  max-height: 1000px; /* Adjust based on your menu height */
+}
 
-    /* Centered overlay text */
-    .carousel-caption-custom {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: 2;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-    }
+.navbar-collapse.collapsing {
+  transition: all 0.3s ease-in-out;
+  max-height: 500px;
+}
 
-    .carousel-caption-custom h1 {
-      font-size: 4rem;
-      font-weight: bold;
-    }
+/* For slower animation, increase duration */
+.navbar-collapse.slow-slide {
+  transition: max-height 0.6s ease-in-out;
+}
 
-    .carousel-caption-custom p {
-      font-size: 1.8rem;
-    }
+.navbar-collapse.slow-slide.collapsing {
+  transition: all 0.6s ease-in-out;
+}
 
-    @media (max-width: 768px) {
-      .carousel-caption-custom h1 {
-        font-size: 2.5rem;
-      }
-
-      .carousel-caption-custom p {
-        font-size: 1.2rem;
-      }
-    }
-
-    .navbar-brand img {
+/* Your existing styles */
+.navbar-brand img {
   height: 50px;
   margin-right: 10px;
 }
@@ -88,4 +69,62 @@ html, body {
   width: 100%;
   height: 3px;
   background-color: #000;
+}
+
+/* =======================================
+     CAROUSEL CSS
+     ======================================= */
+
+/* Full-height carousel image */
+.carousel,
+.carousel-item,
+.carousel-item img {
+  height: 100vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Dark overlay */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Centered overlay text */
+.carousel-caption-custom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.carousel-caption-custom h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.carousel-caption-custom p {
+  font-size: 1.8rem;
+}
+
+/* Responsive adjustments for carousel caption */
+@media (max-width: 768px) {
+  .carousel-caption-custom h1 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption-custom p {
+    font-size: 1.2rem;
+  }
 }

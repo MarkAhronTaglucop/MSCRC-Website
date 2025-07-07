@@ -1,127 +1,45 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  background-color: #fafafa;
-}
-
-/* Active nav link underline */
-.navbar-nav .nav-item.active .nav-link {
-  position: relative;
-  color: #000;
-}
-
-.navbar-nav .nav-item.active .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #000;
-}
-
-/* header */
-.hero-section {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: white;
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-}
-
-.hero-content {
-  padding-bottom: 80px;
-  z-index: 2;
-}
-
-.summary-card {
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-  border: 1px solid #bbf7d0;
-  border-radius: 12px;
-  padding: 2rem;
-}
-
-.semester-header-blue {
-  background-color: #0d6efd;
-}
-.semester-header-green {
-  background-color: #198754;
-}
-.semester-header-purple {
-  background-color: #6f42c1;
-}
-.semester-header-orange {
-  background-color: #fd7e14;
-}
-
-.table-total-row {
-  background-color: rgba(13, 110, 253, 0.1);
-}
-.table-total-row-green {
-  background-color: rgba(25, 135, 84, 0.1);
-}
-.table-total-row-purple {
-  background-color: rgba(111, 66, 193, 0.1);
-}
-.table-total-row-orange {
-  background-color: rgba(253, 126, 20, 0.1);
-}
-
-/* milestone */
-.milestone-badge {
-  background-color: white;
-  border: 2px solid #dee2e6;
-  color: #495057;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-weight: 600;
-}
-
-.stats-number {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #0d6efd;
-}
-
-.testimonial-card {
-  background: linear-gradient(
-    135deg,
-    rgba(13, 110, 253, 0.05) 0%,
-    rgba(13, 110, 253, 0.1) 100%
-  );
-  border: 1px solid rgba(13, 110, 253, 0.2);
-}
-
-.section-spacing {
-  margin: 4rem 0;
-}
-
-/* Parallax effect for mobile fallback */
-@media (max-width: 768px) {
-  .hero-section {
-    background-attachment: scroll;
+/* =======================================
+   GLOBAL STYLES
+   ======================================= */
+   html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #fafafa;
   }
+  
+  /* =======================================
+     NAVIGATION CSS
+     ======================================= */
+  
+  /* Smooth slide animation for navbar collapse */
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+  max-height: 500px;
+  overflow: hidden;
+}
 
-  .page-banner h1 {
-    z-index: 2; /* Ensures the text is above the overlay */
-    font-size: 4rem; /* Default size */
-  }
+.navbar-collapse.show {
+  max-height: 1000px; /* Adjust based on your menu height */
+}
 
-  @media (max-width: 768px) {
-    .page-banner h1 {
-      font-size: 2rem; /* Smaller size for mobile */
-    }
-  }
+.navbar-collapse.collapsing {
+  transition: all 0.3s ease-in-out;
+  max-height: 500px;
+}
 
-  .navbar-brand img {
-    height: 50px;
-    margin-right: 10px;
-  }
+/* For slower animation, increase duration */
+.navbar-collapse.slow-slide {
+  transition: max-height 0.6s ease-in-out;
+}
+
+.navbar-collapse.slow-slide.collapsing {
+  transition: all 0.6s ease-in-out;
+}
+
+/* Your existing styles */
+.navbar-brand img {
+  height: 50px;
+  margin-right: 10px;
 }
 
 @media (max-width: 768px) {
@@ -151,3 +69,125 @@ body {
   height: 3px;
   background-color: #000;
 }
+
+  
+  /* =======================================
+     HEADER SECTION
+     ======================================= */
+  
+  .hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .hero-content {
+    padding-bottom: 80px;
+    z-index: 2;
+  }
+  
+  /* =======================================
+     SEMESTER & TABLE STYLES
+     ======================================= */
+  
+  /* Semester Header Colors */
+  .semester-header-blue {
+    background-color: #0d6efd;
+  }
+  
+  .semester-header-green {
+    background-color: #198754;
+  }
+  
+  .semester-header-purple {
+    background-color: #6f42c1;
+  }
+  
+  .semester-header-orange {
+    background-color: #fd7e14;
+  }
+  
+  /* Table Total Rows */
+  .table-total-row {
+    background-color: rgba(13, 110, 253, 0.1);
+  }
+  
+  .table-total-row-green {
+    background-color: rgba(25, 135, 84, 0.1);
+  }
+  
+  .table-total-row-purple {
+    background-color: rgba(111, 66, 193, 0.1);
+  }
+  
+  .table-total-row-orange {
+    background-color: rgba(253, 126, 20, 0.1);
+  }
+  
+  /* =======================================
+     MILESTONE STYLES
+     ======================================= */
+  
+  .milestone-badge {
+    background-color: white;
+    border: 2px solid #dee2e6;
+    color: #495057;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  
+  /* =======================================
+     STATISTICS AND TESTIMONIALS
+     ======================================= */
+  
+  .stats-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0d6efd;
+  }
+  
+  .testimonial-card {
+    background: linear-gradient(
+      135deg,
+      rgba(13, 110, 253, 0.05) 0%,
+      rgba(13, 110, 253, 0.1) 100%
+    );
+    border: 1px solid rgba(13, 110, 253, 0.2);
+  }
+  
+  /* =======================================
+     SPACING AND LAYOUT
+     ======================================= */
+  
+  .section-spacing {
+    margin: 4rem 0;
+  }
+  
+  /* =======================================
+     RESPONSIVE MEDIA QUERIES
+     ======================================= */
+  
+  /* Mobile Parallax Effect Fallback */
+  @media (max-width: 768px) {
+    .hero-section {
+      background-attachment: scroll;
+    }
+  
+    .page-banner h1 {
+      z-index: 2;
+      font-size: 4rem; /* Default size */
+    }
+  
+    /* Adjust text size for smaller screens */
+    .page-banner h1 {
+      font-size: 2rem;
+    }
+  }
+  
