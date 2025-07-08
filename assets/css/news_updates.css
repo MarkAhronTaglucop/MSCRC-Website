@@ -17,8 +17,7 @@ body {
 }
 
 .navbar-collapse.show {
-  max-height: 1000px;
-  /* Adjust based on your menu height */
+  max-height: 1000px; /* Adjust based on your menu height */
 }
 
 .navbar-collapse.collapsing {
@@ -155,7 +154,7 @@ body {
 #featuredNewsCarousel .carousel-control-next {
   width: 50px;
   height: 50px;
-  background-color: rgba(0, 123, 255, 0.8);
+  background-color: #7d0e0e;
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
@@ -173,7 +172,7 @@ body {
 
 #featuredNewsCarousel .carousel-control-prev:hover,
 #featuredNewsCarousel .carousel-control-next:hover {
-  background-color: rgba(0, 123, 255, 1);
+  background-color: #1d1616;
   transform: translateY(-50%) scale(1.1);
 }
 
@@ -194,13 +193,13 @@ body {
   height: 12px;
   border-radius: 50%;
   margin: 0 5px;
-  background-color: rgba(0, 123, 255, 0.3);
+  background-color: #b8b8b8;
   border: none;
   transition: all 0.3s ease;
 }
 
 #featuredNewsCarousel .carousel-indicators li.active {
-  background-color: #007bff;
+  background-color: #7d0e0e;
   transform: scale(1.2);
 }
 
@@ -233,22 +232,6 @@ body {
 
 .border-warning-left {
   border-left-color: #ffc107 !important;
-}
-
-.search-input {
-  position: relative;
-}
-
-.search-icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #6c757d;
-}
-
-.search-input input {
-  padding-left: 40px;
 }
 
 .notice-card {
