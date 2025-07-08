@@ -1,0 +1,446 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #FAFAFA;
+}
+
+/* ================================
+    NAVIGATION STYLES
+================================= */
+
+/* Smooth slide animation for navbar collapse */
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.navbar-collapse.show {
+  max-height: 1000px;
+  /* Adjust based on your menu height */
+}
+
+.navbar-collapse.collapsing {
+  transition: all 0.3s ease-in-out;
+  max-height: 500px;
+}
+
+/* For slower animation, increase duration */
+.navbar-collapse.slow-slide {
+  transition: max-height 0.6s ease-in-out;
+}
+
+.navbar-collapse.slow-slide.collapsing {
+  transition: all 0.6s ease-in-out;
+}
+
+/* Your existing styles */
+.navbar-brand img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 35px;
+  }
+}
+
+/* Active nav link underline */
+.navbar-nav .nav-item.active .nav-link {
+  position: relative;
+  color: #000;
+}
+
+.navbar-nav .nav-item.active .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+
+
+/* ================================
+    OTHER STYLES (General Page Styles)
+================================= */
+/* Minimal custom CSS - only for specific design elements not available in Bootstrap */
+/* Minimal custom CSS *//* Bootstrap 4.6.2 Compatible Styles */
+/* Bootstrap 4.6.2 Compatible Styles */
+
+/* Carousel Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(250px * 9 * 2); /* Width = logo width * number of logos * 2 */
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-track img {
+  width: 150px;
+  height: 150px;
+  margin-right: 50px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Make carousel responsive */
+@media (max-width: 768px) {
+  .carousel-track img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-track img {
+    width: 140px;
+  }
+}
+
+/* Featured News Carousel Fixed Container */
+#featuredNewsCarousel {
+  position: relative;
+  height: 400px; /* Fixed height for consistent spacing */
+  margin: 0 60px; /* Space for navigation arrows */
+  margin-bottom: 40px; /* Space for indicators */
+}
+
+#featuredNewsCarousel .carousel-inner {
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#featuredNewsCarousel .carousel-item {
+  height: 100%;
+}
+
+#featuredNewsCarousel .card {
+  height: 100%;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Controls Positioning */
+#featuredNewsCarousel .carousel-control-prev,
+#featuredNewsCarousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 123, 255, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+#featuredNewsCarousel .carousel-control-prev {
+  left: -60px;
+}
+
+#featuredNewsCarousel .carousel-control-next {
+  right: -60px;
+}
+
+#featuredNewsCarousel .carousel-control-prev:hover,
+#featuredNewsCarousel .carousel-control-next:hover {
+  background-color: rgba(0, 123, 255, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+#featuredNewsCarousel .carousel-control-prev-icon,
+#featuredNewsCarousel .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Indicators Positioning */
+#featuredNewsCarousel .carousel-indicators {
+  bottom: -35px;
+  margin-bottom: 0;
+}
+
+#featuredNewsCarousel .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: rgba(0, 123, 255, 0.3);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#featuredNewsCarousel .carousel-indicators li.active {
+  background-color: #007bff;
+  transform: scale(1.2);
+}
+
+/* News Page Specific Styles */
+.hero-image {
+  height: 400px; /* Match carousel height */
+  object-fit: cover;
+}
+
+.news-card-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-border-left {
+  border-left: 3px solid;
+}
+
+.border-primary-left {
+  border-left-color: #007bff !important;
+}
+
+.border-info-left {
+  border-left-color: #17a2b8 !important;
+}
+
+.border-success-left {
+  border-left-color: #28a745 !important;
+}
+
+.border-warning-left {
+  border-left-color: #ffc107 !important;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.search-input input {
+  padding-left: 40px;
+}
+
+.notice-card {
+  background-color: #fef3c7;
+  border-color: #fbbf24;
+}
+
+.notice-card .card-title {
+  color: #92400e;
+}
+
+.notice-card .card-text {
+  color: #b45309;
+}
+
+.btn-outline-warning-custom {
+  color: #b45309;
+  border-color: #fbbf24;
+  background-color: transparent;
+}
+
+.btn-outline-warning-custom:hover {
+  background-color: #fef3c7;
+  border-color: #fbbf24;
+  color: #b45309;
+}
+
+/* Navbar slow slide animation */
+.slow-slide {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Fix for Bootstrap 4 flexbox utilities */
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+/* Ensure equal height cards */
+.card.h-100 {
+  height: 100% !important;
+}
+
+.card-body.d-flex.flex-column {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Button group responsive fix */
+.btn-group.flex-wrap {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .btn-group.flex-wrap .btn {
+    margin-bottom: 0.25rem;
+  }
+}
+
+/* Overflow hidden for cards */
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+/* Additional spacing utilities for Bootstrap 4 compatibility */
+.py-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+/* Fixed navbar spacing */
+body {
+  padding-top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .elementor-section {
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+  /* Mobile carousel adjustments */
+  #featuredNewsCarousel {
+    margin: 0 20px;
+    margin-bottom: 40px;
+    height: 350px;
+  }
+
+  #featuredNewsCarousel .carousel-control-prev {
+    left: -25px;
+  }
+
+  #featuredNewsCarousel .carousel-control-next {
+    right: -25px;
+  }
+
+  #featuredNewsCarousel .carousel-control-prev,
+  #featuredNewsCarousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-image {
+    height: 200px;
+  }
+
+  /* Stack image and content vertically on mobile */
+  #featuredNewsCarousel .row.no-gutters {
+    flex-direction: column;
+  }
+
+  #featuredNewsCarousel .col-md-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #featuredNewsCarousel {
+    margin: 0 10px;
+    margin-bottom: 40px;
+    height: 450px;
+  }
+
+  #featuredNewsCarousel .carousel-control-prev {
+    left: -15px;
+  }
+
+  #featuredNewsCarousel .carousel-control-next {
+    right: -15px;
+  }
+
+  .hero-image {
+    height: 180px;
+  }
+}
+
+/* Animation classes */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.slide-up {
+  animation-name: slideUp;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+/* This can include other general styles for the page content, forms, buttons, etc. */
+.gap-3 > * {
+  margin-right: 1rem;
+}
+
+.gap-3 > *:last-child {
+  margin-right: 0;
+}
+
+.sticky-footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: underline;
+  color: white;
+  white-space: nowrap;
+}
+
+footer .quick-links-label {
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+footer .link-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  overflow-x: auto;
+}

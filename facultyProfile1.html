@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSU Physics</title>
+    <link rel="stylesheet" href="assets/css/news_updates.css" />
+    <!-- Bootstrap 4.6.2 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Updated Navbar with slow-slide class -->
+    <nav
+      class="navbar navbar-expand-md navbar-light fixed-top"
+      style="background-color: #e3e3e3"
+    >
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/images/homepage/CSUicon.jpg" alt="CSU Logo" />
+        <span class="lead">CSU MATH</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse slow-slide" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto font-weight-bold">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About the Department</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="programs.html">Programs Offering</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="facultyProfile.html">Faculty Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news_updates.html">News and Updates</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="border-bottom bg-white py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h1 class="display-5 fw-bold mb-2">News & Updates</h1>
+            <p class="text-muted mb-0">
+              Stay informed with the latest school announcements, events, and
+              important updates
+            </p>
+          </div>
+          <div class="col-md-4 mt-3 mt-md-0">
+            <section
+              class="elementor-section elementor-top-section elementor-element elementor-element-9af35e4 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+              data-id="9af35e4"
+              data-element_type="section"
+              data-settings='{"stretch_section":"section-stretched","background_background":"classic"}'
+              style="width: 375px; left: -15px"
+            >
+              <div class="elementor-background-overlay"></div>
+              <div class="elementor-container elementor-column-gap-extended">
+                <div
+                  class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-59e5228"
+                  data-id="59e5228"
+                  data-element_type="column"
+                >
+                  <div
+                    class="elementor-widget-wrap elementor-element-populated"
+                  >
+                    <section
+                      class="elementor-section elementor-inner-section elementor-element elementor-element-5e3dbb3 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default animated slide-up"
+                      data-id="5e3dbb3"
+                      data-element_type="section"
+                      data-settings='{"animation":"slide-up"}'
+                    >
+                      <div
+                        class="elementor-container elementor-column-gap-extended"
+                      >
+                        <div
+                          class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1f07d86"
+                          data-id="1f07d86"
+                          data-element_type="column"
+                          data-settings='{"animation":"none"}'
+                        >
+                          <div
+                            class="elementor-widget-wrap elementor-element-populated"
+                          >
+                            <div
+                              class="elementor-element elementor-element-93e3ee2 elementor-widget elementor-widget-html"
+                              data-id="93e3ee2"
+                              data-element_type="widget"
+                              data-widget_type="html.default"
+                            >
+                              <div class="elementor-widget-container">
+                                <meta charset="UTF-8" />
+                                <meta
+                                  name="viewport"
+                                  content="width=device-width, initial-scale=1"
+                                />
+                                <title>
+                                  Colleges &amp; Professional Schools
+                                </title>
+                                <style>
+                                  * {
+                                    box-sizing: border-box;
+                                    padding: 0;
+                                    margin: 0;
+                                  }
+
+                                  .carousel-wrapper {
+                                    overflow: hidden;
+                                    position: relative;
+                                    width: 100%;
+                                  }
+
+                                  .carousel-track {
+                                    display: flex;
+                                    width: calc(
+                                      250px * 9 * 2
+                                    ); /* Width = logo width * number of logos * 2 */
+                                    animation: scroll 30s linear infinite;
+                                  }
+
+                                  .carousel-track img {
+                                    width: 150px;
+                                    height: 150px;
+                                    margin-right: 50px;
+                                    flex-shrink: 0;
+                                    object-fit: contain;
+                                  }
+
+                                  @keyframes scroll {
+                                    0% {
+                                      transform: translateX(0);
+                                    }
+                                    100% {
+                                      transform: translateX(-50%);
+                                    }
+                                  }
+
+                                  /* Make carousel responsive */
+                                  @media (max-width: 768px) {
+                                    .carousel-track img {
+                                      width: 180px;
+                                    }
+                                  }
+
+                                  @media (max-width: 480px) {
+                                    .carousel-track img {
+                                      width: 140px;
+                                    }
+                                  }
+                                </style>
+
+                                <div class="carousel-wrapper">
+                                  <div class="carousel-track">
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/homepage/CSUicon.jpg"
+                                      alt="GS"
+                                    />
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/about/math logo.png"
+                                      alt="GS"
+                                    />
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/about/cmns.png"
+                                      alt="CoFES"
+                                    />
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/about/JAS-ANZ.png"
+                                      alt="CMNS"
+                                    />
+
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/homepage/CSUicon.jpg"
+                                      alt="GS"
+                                    />
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/about/math logo.png"
+                                      alt="GS"
+                                    />
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/about/cmns.png"
+                                      alt="CoFES"
+                                    />
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/about/JAS-ANZ.png"
+                                      alt="CMNS"
+                                    />
+
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/homepage/CSUicon.jpg"
+                                      alt="GS"
+                                    />
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/about/math logo.png"
+                                      alt="GS"
+                                    />
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/about/cmns.png"
+                                      alt="CoFES"
+                                    />
+                                    <img
+                                      decoding="async"
+                                      src="assets/images/about/JAS-ANZ.png"
+                                      alt="CMNS"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <!-- Content wrapper: smaller margin‑top on lg+ screens -->
+    <div class="container py-4">
+      <div class="row">
+        <!-- Main Content -->
+        <div class="col-lg-9">
+          <!-- Featured News -->
+          <section class="mb-5">
+            <h2 class="h3 fw-semibold mb-4">Featured News</h2>
+            <div class="card overflow-hidden">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img
+                    src="/placeholder.svg?height=300&width=500"
+                    alt="Featured news"
+                    class="img-fluid hero-image w-100"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body h-100 d-flex flex-column">
+                    <div class="mb-3">
+                      <span class="badge bg-primary me-2">Important</span>
+                      <small class="text-muted">
+                        <i class="bi bi-clock me-1"></i>2 hours ago
+                      </small>
+                    </div>
+                    <h3 class="card-title h5 mb-3">
+                      New Academic Year Registration Now Open
+                    </h3>
+                    <p class="card-text text-muted mb-4 flex-grow-1">
+                      Registration for the 2024-2025 academic year is now open.
+                      Students and parents can access the online portal to
+                      complete enrollment, submit required documents, and select
+                      courses.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Filter Tabs -->
+          <div class="mb-4">
+            <div class="btn-group flex-wrap" role="group">
+              <button type="button" class="btn btn-primary btn-sm">All</button>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                Announcements
+              </button>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                Events
+              </button>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                Academic
+              </button>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                Sports
+              </button>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                Activities
+              </button>
+            </div>
+          </div>
+
+          <!-- News Grid -->
+          <div class="row g-4 mb-5">
+            <!-- News Item 1 -->
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img
+                  src="/placeholder.svg?height=200&width=400"
+                  alt="Science fair"
+                  class="card-img-top news-card-image"
+                />
+                <div class="card-body d-flex flex-column">
+                  <div class="mb-2">
+                    <span class="badge bg-secondary me-2">Events</span>
+                    <small class="text-muted">March 15, 2024</small>
+                  </div>
+                  <h5 class="card-title">Annual Science Fair 2024</h5>
+                  <p class="card-text text-muted mb-3 flex-grow-1">
+                    Join us for our annual science fair featuring innovative
+                    projects from students across all grade levels. Awards
+                    ceremony at 3 PM.
+                  </p>
+                  <div class="mb-3">
+                    <small class="text-muted me-3">
+                      <i class="bi bi-calendar me-1"></i>March 20, 2024
+                    </small>
+                    <small class="text-muted">
+                      <i class="bi bi-geo-alt me-1"></i>Main Auditorium
+                    </small>
+                  </div>
+                  <a href="#" class="btn btn-outline-primary btn-sm"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img
+                  src="/placeholder.svg?height=200&width=400"
+                  alt="Basketball team"
+                  class="card-img-top news-card-image"
+                />
+                <div class="card-body d-flex flex-column">
+                  <div class="mb-2">
+                    <span class="badge bg-secondary me-2">Sports</span>
+                    <small class="text-muted">March 12, 2024</small>
+                  </div>
+                  <h5 class="card-title">
+                    Basketball Team Wins Regional Championship
+                  </h5>
+                  <p class="card-text text-muted mb-3 flex-grow-1">
+                    Our varsity basketball team secured the regional
+                    championship with a thrilling 78-72 victory. Congratulations
+                    to all players and coaches!
+                  </p>
+                  <div class="mb-3">
+                    <small class="text-muted">
+                      <i class="bi bi-people me-1"></i>Sports Department
+                    </small>
+                  </div>
+                  <a href="#" class="btn btn-outline-primary btn-sm"
+                    >Read Full Story</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img
+                  src="/placeholder.svg?height=200&width=400"
+                  alt="Library renovation"
+                  class="card-img-top news-card-image"
+                />
+                <div class="card-body d-flex flex-column">
+                  <div class="mb-2">
+                    <span class="badge bg-secondary me-2">Announcements</span>
+                    <small class="text-muted">March 10, 2024</small>
+                  </div>
+                  <h5 class="card-title">Library Renovation Complete</h5>
+                  <p class="card-text text-muted mb-3 flex-grow-1">
+                    The library renovation project is now complete, featuring
+                    new study spaces, updated technology, and expanded seating
+                    areas for students.
+                  </p>
+                  <div class="mb-3">
+                    <small class="text-muted">
+                      <i class="bi bi-geo-alt me-1"></i>Main Library
+                    </small>
+                  </div>
+                  <a href="#" class="btn btn-outline-primary btn-sm"
+                    >View Photos</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- News Item 4 -->
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img
+                  src="/placeholder.svg?height=200&width=400"
+                  alt="Parent teacher conference"
+                  class="card-img-top news-card-image"
+                />
+                <div class="card-body d-flex flex-column">
+                  <div class="mb-2">
+                    <span class="badge bg-secondary me-2">Academic</span>
+                    <small class="text-muted">March 8, 2024</small>
+                  </div>
+                  <h5 class="card-title">
+                    Parent-Teacher Conferences Scheduled
+                  </h5>
+                  <p class="card-text text-muted mb-3 flex-grow-1">
+                    Spring parent-teacher conferences are scheduled for March
+                    25-27. Online booking system is now available for scheduling
+                    appointments.
+                  </p>
+                  <div class="mb-3">
+                    <small class="text-muted">
+                      <i class="bi bi-calendar me-1"></i>March 25-27, 2024
+                    </small>
+                  </div>
+                  <a href="#" class="btn btn-outline-primary btn-sm"
+                    >Book Appointment</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Load More -->
+          <div class="text-center">
+            <button class="btn btn-outline-primary">Load More News</button>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-3">
+          <!-- Upcoming Events -->
+          <div class="card mb-4">
+            <div class="card-header">
+              <h5 class="card-title mb-0">
+                <i class="bi bi-calendar me-2"></i>Upcoming Events
+              </h5>
+            </div>
+            <div class="card-body">
+              <div class="event-border-left border-primary-left ps-3 mb-3">
+                <div class="fw-medium">Spring Break</div>
+                <small class="text-muted">March 25 - April 1</small>
+              </div>
+              <hr />
+              <div class="event-border-left border-info-left ps-3 mb-3">
+                <div class="fw-medium">Drama Club Performance</div>
+                <small class="text-muted">April 5, 7:00 PM</small>
+              </div>
+              <hr />
+              <div class="event-border-left border-success-left ps-3 mb-3">
+                <div class="fw-medium">College Fair</div>
+                <small class="text-muted">April 12, 10:00 AM</small>
+              </div>
+              <hr />
+              <div class="event-border-left border-warning-left ps-3 mb-3">
+                <div class="fw-medium">Spring Sports Tryouts</div>
+                <small class="text-muted">April 15-17</small>
+              </div>
+              <a href="#" class="btn btn-outline-primary btn-sm w-100 mt-3"
+                >View Full Calendar</a
+              >
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="card mb-4">
+            <div class="card-header">
+              <h5 class="card-title mb-0">Quick Links</h5>
+            </div>
+            <div class="card-body p-0">
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Student Portal</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Parent Portal</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Academic Calendar</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >School Policies</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Contact Directory</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Important Notice -->
+          <div class="card notice-card">
+            <div class="card-header">
+              <h5 class="card-title mb-0">Important Notice</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text mb-3">
+                New safety protocols are now in effect. Please review the
+                updated guidelines in the student handbook.
+              </p>
+              <a href="#" class="btn btn-outline-warning-custom btn-sm"
+                >Read Guidelines</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS & dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -18,7 +18,10 @@
 
   <body>
     <!-- Updated Navbar with slow-slide class -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #F1F1F1;">
+    <nav
+      class="navbar navbar-expand-md navbar-dark fixed-top"
+      style="background: linear-gradient(45deg, #eeeeee, #7d0e0e, #1d1616);"
+    >
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="assets/images/homepage/CSUicon.jpg" alt="CSU Logo" />
         <span class="lead">CSU MATH</span>
@@ -37,9 +40,7 @@
       <div class="collapse navbar-collapse slow-slide" id="navbarCollapse">
         <ul class="navbar-nav ml-auto font-weight-bold">
           <li class="nav-item">
-            <a class="nav-link" href="home.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="home.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About the Department</a>
@@ -51,17 +52,24 @@
             <a class="nav-link" href="facultyProfile.html">Faculty Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">News and Updates</a>
+            <a class="nav-link" href="news_updates.html">News and Updates</a>
           </li>
         </ul>
       </div>
     </nav>
 
-<!-- Page Banner -->
-    <header class="page-banner" style="background-image: url('assets/images/facultyprofiles/banner3.jfif');">
+    <!-- Page Banner -->
+    <header
+      class="page-banner"
+      style="
+        background-image: url('assets/images/facultyprofiles/banner3.jfif');
+      "
+    >
       <div class="container h-100">
         <div class="row h-100">
-          <div class="col-12 d-flex flex-column justify-content-end align-items-center text-center">
+          <div
+            class="col-12 d-flex flex-column justify-content-end align-items-center text-center"
+          >
             <div class="page-banner-content pb-5 px-3">
               <h1 class="display-3 fw-bold text-white">FACULTY PROFILE</h1>
             </div>
@@ -80,6 +88,93 @@
 
       <!-- Let the row grow naturally; give vertical gap (gy‑4) instead of fixed height -->
       <div class="cards-grid">
+        <!-- Profile Card 3 -->
+        <article
+          class="profile-card"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-label="View profile for Sample Faculty Member"
+        >
+          <!-- Top-right accent -->
+          <div class="accent-corner">
+            <div class="accent-vertical"></div>
+            <div class="accent-horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <!-- Image Container -->
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="/assets/images/facultyprofiles/CMNS_MATH_PALUGA,ROLANDO,.JPG"
+                  alt="Paluga, Rolando N."
+                />
+              </div>
+            </div>
+
+            <!-- Basic Info -->
+            <div class="basic-info">
+              <h3 class="name">Paluga, Rolando N.</h3>
+              <p class="position">University Professor</p>
+              <p class="institution">
+                President, CSU Faculty Association
+              </p>
+              <p class="institution">Caraga State University</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div class="hidden-content">
+              <!-- Social Links -->
+              <div class="social-links">
+                <a
+                  href="mailto:sample@csu.edu.ph"
+                  class="social-link"
+                  aria-label="Send email"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="LinkedIn profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  aria-label="Facebook profile"
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+
+              <!-- Education Info -->
+              <div class="education-info">
+                <div class="education-item">
+                  PhD in Mathematics (MSU IIT, 2002)
+                </div>
+                <div class="education-item">
+                  MS in Mathematics (MSU IIT, 1996)
+                </div>
+                <div class="education-item">
+                  BS in Mathematics (MSU IIT, 1987)
+                </div>
+                <div class="specialization">
+                  Specialization: Graph Theory, Topology, Mathematical Modeling
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
         <!-- Profile Card 2 -->
         <article
           class="profile-card"
@@ -108,7 +203,8 @@
             <!-- Basic Info -->
             <div class="basic-info">
               <h3 class="name">Arcede, Jayrold P.</h3>
-              <p class="position">Professor VI, Center Chief, MSCRC</p>
+              <p class="position">Professor VI</p>
+              <p class="institution">Center Chief, MSCRC</p>
               <p class="institution">Caraga State University</p>
             </div>
 
@@ -193,10 +289,7 @@
             <!-- Basic Info -->
             <div class="basic-info">
               <h3 class="name">Herrera, Miraluna L.</h3>
-              <p class="position">
-                Professor VI, Director, Office of Curriculum and Instruction
-                Development (OCID)
-              </p>
+              <p class="position">Professor VI</p>
               <p class="institution">Caraga State University</p>
             </div>
 
@@ -360,9 +453,7 @@
             <!-- Basic Info -->
             <div class="basic-info">
               <h3 class="name">Herrera, Fernando T.</h3>
-              <p class="position">
-                Professor V, Director, Quality Assurance Management Services
-              </p>
+              <p class="position">Professor V</p>
               <p class="institution">Caraga State University</p>
             </div>
 
@@ -447,7 +538,7 @@
             <!-- Basic Info -->
             <div class="basic-info">
               <h3 class="name">Libao, Merliza F.</h3>
-              <p class="position">Professor I, Director, OAS</p>
+              <p class="position">Professor I</p>
               <p class="institution">Caraga State University</p>
             </div>
 
@@ -503,94 +594,6 @@
             </div>
           </div>
         </article>
-
-        <!-- Profile Card 3 -->
-        <article
-          class="profile-card"
-          tabindex="0"
-          role="button"
-          aria-expanded="false"
-          aria-label="View profile for Sample Faculty Member"
-        >
-          <!-- Top-right accent -->
-          <div class="accent-corner">
-            <div class="accent-vertical"></div>
-            <div class="accent-horizontal"></div>
-          </div>
-
-          <div class="card-content">
-            <!-- Image Container -->
-            <div class="image-container">
-              <div class="image-wrapper">
-                <img
-                  src="/assets/images/facultyprofiles/CMNS_MATH_PALUGA,ROLANDO,.JPG"
-                  alt="Paluga, Rolando N."
-                />
-              </div>
-            </div>
-
-            <!-- Basic Info -->
-            <div class="basic-info">
-              <h3 class="name">Paluga, Rolando N.</h3>
-              <p class="position">
-                University Professor, President, CSU Faculty Association
-                President
-              </p>
-              <p class="institution">Caraga State University</p>
-            </div>
-
-            <!-- Hidden Content -->
-            <div class="hidden-content">
-              <!-- Social Links -->
-              <div class="social-links">
-                <a
-                  href="mailto:sample@csu.edu.ph"
-                  class="social-link"
-                  aria-label="Send email"
-                  onclick="event.stopPropagation()"
-                >
-                  <i class="fa fa-envelope"></i>
-                </a>
-                <a
-                  href="#"
-                  class="social-link"
-                  aria-label="LinkedIn profile"
-                  onclick="event.stopPropagation()"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a
-                  href="#"
-                  class="social-link"
-                  aria-label="Facebook profile"
-                  onclick="event.stopPropagation()"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </div>
-
-              <!-- Education Info -->
-              <div class="education-info">
-                <div class="education-item">
-                  PhD in Mathematics (MSU IIT, 2002)
-                </div>
-                <div class="education-item">
-                  MS in Mathematics (MSU IIT, 1996)
-                </div>
-                <div class="education-item">
-                  BS in Mathematics (MSU IIT, 1987)
-                </div>
-                <div class="specialization">
-                  Specialization: Graph Theory, Topology, Mathematical Modeling
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
       </div>
     </section>
 
@@ -629,9 +632,7 @@
             <!-- Basic Info -->
             <div class="basic-info">
               <h3 class="name">Latayada, Mary Joy R.</h3>
-              <p class="position">
-                Associate Professor V, Chairperson, Mathematics Department
-              </p>
+              <p class="position">Associate Professor V</p>
               <p class="institution">Caraga State University</p>
             </div>
 
@@ -715,8 +716,10 @@
             <div class="basic-info">
               <h3 class="name">Macalalag, Jay Michael R.</h3>
               <p class="position">
-                Associate Professor V, Graduate Programs Coordinator, Department
-                Head, Mathematics
+                Associate Professor V
+              </p>
+              <p class="institution">
+                Department Head, Mathematics
               </p>
               <p class="institution">Caraga State University</p>
             </div>
@@ -799,7 +802,10 @@
             <div class="basic-info">
               <h3 class="name">Ocarez, Felix R.</h3>
               <p class="position">
-                Associate Professor V, OIC-Chief, Monitoring and Evaluation,
+                Associate Professor V
+              </p>
+              <p class="institution">
+                OIC-Chief, Monitoring and Evaluation,
                 Head, Procurement Planning and Purchasing Unit
               </p>
               <p class="institution">Caraga State University</p>
@@ -1131,10 +1137,7 @@
             <!-- Basic Info -->
             <div class="basic-info">
               <h3 class="name">Albia, Jake A.</h3>
-              <p class="position">
-                Associate Professor III, Coordinator, CSU-Bayugan City Graduate
-                Extension Program
-              </p>
+              <p class="position">Associate Professor III</p>
               <p class="institution">Caraga State University</p>
             </div>
 
@@ -1216,8 +1219,10 @@
             <div class="basic-info">
               <h3 class="name">Mentuda, Cheryl Q.</h3>
               <p class="position">
-                Associate Professor III, Graduate Program Chair, MSMath and PhD
-                Math
+                Associate Professor III
+              </p>
+              <p class="institution">
+                Graduate Program Chair, MSMath and PhD Math
               </p>
               <p class="institution">Caraga State University</p>
             </div>
@@ -1711,7 +1716,7 @@
             <!-- Basic Info -->
             <div class="basic-info">
               <h3 class="name">Gamalo, Angela Fel P.</h3>
-              <p class="position">Associate Professor I, Director, MSCRC</p>
+              <p class="position">Associate Professor I</p>
               <p class="institution">Caraga State University</p>
             </div>
 
@@ -2127,7 +2132,12 @@
             <!-- Basic Info -->
             <div class="basic-info">
               <h3 class="name">Lingo, Junar T.</h3>
-              <p class="position">Instructor I, CMNS Extension Coordinator</p>
+              <p class="position">
+                Instructor I
+              </p>
+              <p class="institution">
+                College Extension Coordinator, CMNS
+              </p>
               <p class="institution">Caraga State University</p>
             </div>
 
