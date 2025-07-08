@@ -1,12 +1,12 @@
 /* ================================
     BODY STYLES
 ================================= */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
-  background-color: #fafafa;
+  background-color: white;
 }
-
 
 /* ================================
     NAVIGATION STYLES
@@ -71,7 +71,6 @@ html, body {
   background-color: #000;
 }
 
-
 /* ================================
     BANNER STYLES
 ================================= */
@@ -116,10 +115,15 @@ html, body {
   }
 }
 
-
+/* =======================================
+   SPACING AND LAYOUT
+======================================= */
+.section-spacing {
+  margin: 4rem 0;
+}
 
 /* ================================
-    OTHER STYLES (General Page Styles)
+    FOOTER STYLES
 ================================= */
 
 /* This can include other general styles for the page content, forms, buttons, etc. */

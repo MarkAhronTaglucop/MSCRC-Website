@@ -1,17 +1,24 @@
 /* =======================================
    GLOBAL STYLES
-   ======================================= */
-   html, body {
-    height: 100%;
-    margin: 0;
-    background-color: #fafafa;
-  }
-  
-  /* =======================================
-     NAVIGATION CSS
-     ======================================= */
-  
-  /* Smooth slide animation for navbar collapse */
+======================================= */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+
+/* =======================================
+   SPACING AND LAYOUT
+======================================= */
+.section-spacing {
+  margin: 4rem 0;
+}
+
+/* =======================================
+   NAVIGATION CSS
+======================================= */
+/* Smooth slide animation for navbar collapse */
 .navbar-collapse {
   transition: all 0.3s ease-in-out;
   max-height: 500px;
@@ -36,7 +43,6 @@
   transition: all 0.6s ease-in-out;
 }
 
-/* Your existing styles */
 .navbar-brand img {
   height: 50px;
   margin-right: 10px;
@@ -63,107 +69,337 @@
 .navbar-nav .nav-item.active .nav-link::after {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 3px;
   background-color: #000;
 }
 
-  
-  /* =======================================
-     HEADER SECTION
-     ======================================= */
-  
-  .hero-section {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-  }
-  
-  .hero-content {
-    padding-bottom: 80px;
-    z-index: 2;
-  }
-  
-  /* =======================================
-     SEMESTER & TABLE STYLES
-     ======================================= */
+/* =======================================
+   HEADER SECTION
+======================================= */
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
 
-  
-  /* Table Total Rows */
-  .table-total-row {
-    background-color: rgba(61, 65, 70, 0.1);
+.hero-content {
+  padding-bottom: 80px;
+  z-index: 2;
+}
+
+/* =======================================
+   SEMESTER & TABLE STYLES
+======================================= */
+.table-total-row {
+  background-color: rgba(61, 65, 70, 0.1);
+}
+
+/* =======================================
+   IMPROVED MILESTONE STYLES
+======================================= */
+.milestone-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.milestone-item-new {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.milestone-item-new:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.milestone-year {
+  background: linear-gradient(135deg, #D84040, #8E1616);
+  color: #F1F1F1;
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  min-width: 9%;
+  text-align: center;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.milestone-content {
+  flex: 1;
+}
+
+.milestone-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.milestone-description {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =======================================
+   EMPLOYABILITY SECTION STYLES
+======================================= */
+.employability-stat-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.employability-stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+  margin-bottom: 1rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stat-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.stat-description {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.employment-timeline-card {
+  background: linear-gradient(135deg, #080f2c 0%, #764ba2 100%);
+  color: white;
+  border-radius: 15px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.timeline-stat {
+  padding: 1rem;
+}
+
+.timeline-percentage {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-desc {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.insights-card {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border-radius: 15px;
+  padding: 2.5rem;
+}
+
+.insight-item {
+  padding: 1rem;
+}
+
+.insight-item h5 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.insight-item p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+/* =======================================
+   ALUMNI TESTIMONIAL STYLES
+======================================= */
+.alumni-video-container {
+  position: relative;
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-placeholder {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video-placeholder:hover {
+  transform: scale(1.05);
+}
+
+.alumni-info-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.alumni-header {
+  text-align: center;
+  border-bottom: 2px solid #f8f9fa;
+  padding-bottom: 1.5rem;
+}
+
+.alumni-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 3px solid #007bff;
+}
+
+.alumni-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.alumni-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.alumni-graduation {
+  font-size: 0.9rem;
+}
+
+.alumni-details {
+  padding-top: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.detail-item i {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+
+.alumni-quote {
+  background: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 1.5rem;
+  border-radius: 0 10px 10px 0;
+  margin-top: 1rem;
+}
+
+.alumni-quote i {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.alumni-quote p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* =======================================
+   RESPONSIVE DESIGN
+======================================= */
+@media (max-width: 768px) {
+  .milestone-item-new {
+    flex-direction: column;
+    text-align: center;
   }
   
-  /* =======================================
-     MILESTONE STYLES
-     ======================================= */
-  
-     .milestone-badge {
-      background-color: white;
-      border: 1px solid #dee2e6;
-      color: #212529;
-      padding: 0.4rem 0.9rem;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      flex-shrink: 0; /* prevents badge from shrinking */
-      line-height: 1.4;
-    }
-  
-  /* =======================================
-     STATISTICS AND TESTIMONIALS
-     ======================================= */
-  
-  .stats-number {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #0d6efd;
+  .milestone-year {
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
   
-  .testimonial-card {
-    background: linear-gradient(
-      135deg,
-      rgba(13, 110, 253, 0.05) 0%,
-      rgba(13, 110, 253, 0.1) 100%
-    );
-    border: 1px solid rgba(13, 110, 253, 0.2);
+  .stat-number {
+    font-size: 2.5rem;
   }
   
-  /* =======================================
-     SPACING AND LAYOUT
-     ======================================= */
+  .timeline-percentage {
+    font-size: 2rem;
+  }
   
+  .alumni-info-card {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
   .section-spacing {
-    margin: 4rem 0;
+    margin: 2rem 0;
   }
   
-  /* =======================================
-     RESPONSIVE MEDIA QUERIES
-     ======================================= */
-  
-  /* Mobile Parallax Effect Fallback */
-  @media (max-width: 768px) {
-    .hero-section {
-      background-attachment: scroll;
-    }
-  
-    .page-banner h1 {
-      z-index: 2;
-      font-size: 4rem; /* Default size */
-    }
-  
-    /* Adjust text size for smaller screens */
-    .page-banner h1 {
-      font-size: 2rem;
-    }
+  .employability-stat-card,
+  .employment-timeline-card,
+  .insights-card,
+  .alumni-info-card {
+    padding: 1.5rem;
   }
   
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+/* =======================================
+   STATISTICS AND TESTIMONIALS
+======================================= */
+.stats-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.05) 0%, rgba(13, 110, 253, 0.1) 100%);
+  border: 1px solid rgba(13, 110, 253, 0.2);
+}
