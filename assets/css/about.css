@@ -129,7 +129,7 @@ body {
 
 .alumni-section-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-  min-height: 89vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 4rem 0;
