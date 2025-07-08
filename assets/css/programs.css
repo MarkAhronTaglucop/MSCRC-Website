@@ -198,8 +198,8 @@ body {
 }
 
 .employment-timeline-card {
-  background: linear-gradient(135deg, #080f2c 0%, #764ba2 100%);
-  color: white;
+  background: white;
+  color: black;
   border-radius: 15px;
   padding: 2.5rem;
   text-align: center;
@@ -228,122 +228,113 @@ body {
 }
 
 .insights-card {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  color: white;
+  background: white;
+  color: black;
   border-radius: 15px;
   padding: 2.5rem;
 }
 
-.insight-item {
-  padding: 1rem;
+/* Carousel Image Styles */
+.carousel-image {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.insight-item h5 {
-  font-weight: 600;
-  margin-bottom: 0.75rem;
+/* Carousel Controls Styling */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+  color: #333;
 }
 
-.insight-item p {
-  font-size: 0.9rem;
-  opacity: 0.9;
-  line-height: 1.4;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators li {
+  background-color: #007bff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-image {
+      height: 300px;
+  }
+  
+  .insights-card {
+      padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-image {
+      height: 250px;
+  }
 }
 
 /* =======================================
-   ALUMNI TESTIMONIAL STYLES
+ RESPONSIVE DESIGN
 ======================================= */
-.alumni-video-container {
-  position: relative;
-  background: #f8f9fa;
-  border-radius: 15px;
-  padding: 2rem;
-  text-align: center;
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 768px) {
+  .alumni-name {
+      font-size: 1.75rem;
+  }
+  
+  .alumni-video-container {
+      min-height: 300px;
+      padding: 2rem 1rem;
+  }
+  
+  .alumni-details-card {
+      padding: 1rem 0;
+      margin-top: 2rem;
+  }
+  
+  .alumni-info-grid {
+      padding: 1rem;
+  }
+  
+  .info-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+  }
+  
+  .info-item span {
+      text-align: left;
+  }
 }
 
-.video-placeholder {
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.video-placeholder:hover {
-  transform: scale(1.05);
-}
-
-.alumni-info-card {
-  background: white;
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  height: 100%;
-}
-
-.alumni-header {
-  text-align: center;
-  border-bottom: 2px solid #f8f9fa;
-  padding-bottom: 1.5rem;
-}
-
-.alumni-photo {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border: 3px solid #007bff;
-}
-
-.alumni-name {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-.alumni-title {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 0.25rem;
-}
-
-.alumni-graduation {
-  font-size: 0.9rem;
-}
-
-.alumni-details {
-  padding-top: 1.5rem;
-}
-
-.detail-item {
-  display: flex;
-  align-items: center;
-  font-size: 0.95rem;
-}
-
-.detail-item i {
-  width: 20px;
-  margin-right: 0.5rem;
-}
-
-.alumni-quote {
-  background: #f8f9fa;
-  border-left: 4px solid #007bff;
-  padding: 1.5rem;
-  border-radius: 0 10px 10px 0;
-  margin-top: 1rem;
-}
-
-.alumni-quote i {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.alumni-quote p {
-  margin: 0;
-  line-height: 1.6;
-  color: #555;
+@media (max-width: 576px) {
+  .alumni-name {
+      font-size: 1.5rem;
+  }
+  
+  .alumni-testimonial {
+      padding: 1.5rem;
+  }
+  
+  .alumni-testimonial p {
+      font-size: 1rem;
+  }
 }
 
 /* =======================================
@@ -388,18 +379,4 @@ body {
   .stat-number {
     font-size: 2rem;
   }
-}
-
-/* =======================================
-   STATISTICS AND TESTIMONIALS
-======================================= */
-.stats-number {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #0d6efd;
-}
-
-.testimonial-card {
-  background: linear-gradient(135deg, rgba(13, 110, 253, 0.05) 0%, rgba(13, 110, 253, 0.1) 100%);
-  border: 1px solid rgba(13, 110, 253, 0.2);
 }
