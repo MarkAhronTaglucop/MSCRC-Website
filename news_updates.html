@@ -20,6 +20,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <script src="assets/js/newsupdates.js"></script>
   </head>
 
   <body>
@@ -222,7 +223,6 @@
 
               <!-- Carousel Items -->
               <div class="carousel-inner">
-                
                 <!-- Slide 2 -->
                 <div class="carousel-item">
                   <div class="card overflow-hidden">
@@ -237,26 +237,24 @@
                       <div class="col-md-6">
                         <div class="card-body h-100 d-flex flex-column">
                           <div class="mb-3">
-                            <span class="badge badge-dark mr-2"
-                              >Important</span
-                            >
+                            <span class="badge badge-dark mr-2">Important</span>
                             <small class="text-muted">
                               <i class="bi bi-clock mr-1"></i>May 27-28, 2025
                             </small>
                           </div>
                           <h3 class="card-title h5 mb-3">SFaMS WebCon 2025</h3>
                           <p class="card-text text-muted mb-4 flex-grow-1">
-                            The Caraga State University - Mathematics Department - 
-                            "Advancing Mathematical and Statistical Research:
-                            Bridging Theory, Practice, and Innovation” on 27-28 May
-                            2025 at HERO Learning Commons, Caraga State University,
-                            Philippines.
+                            The Caraga State University - Mathematics Department
+                            - "Advancing Mathematical and Statistical Research:
+                            Bridging Theory, Practice, and Innovation” on 27-28
+                            May 2025 at HERO Learning Commons, Caraga State
+                            University, Philippines.
                           </p>
                           <a
-                          href="https://sites.google.com/carsu.edu.ph/sfamscon/home"
-                          class="btn btn-dark"
-                          >Learn More</a
-                        >
+                            href="https://sites.google.com/carsu.edu.ph/sfamscon/home"
+                            class="btn btn-dark"
+                            >Learn More</a
+                          >
                         </div>
                       </div>
                     </div>
@@ -321,11 +319,14 @@
                               <i class="bi bi-clock mr-1"></i>January 7-8, 2021
                             </small>
                           </div>
-                          <h3 class="card-title h5 mb-3">
-                            SFaMS WebCon 2020
-                          </h3>
+                          <h3 class="card-title h5 mb-3">SFaMS WebCon 2020</h3>
                           <p class="card-text text-muted mb-4 flex-grow-1">
-                            In the promotion of a research culture among the CSU constituents which include the Graduate and Undergraduate programs of the University, and the extension communities, the Department of Mathematics of the College of Mathematics and Natural Sciences (CMNS) , and the Extension Program PASA ...
+                            In the promotion of a research culture among the CSU
+                            constituents which include the Graduate and
+                            Undergraduate programs of the University, and the
+                            extension communities, the Department of Mathematics
+                            of the College of Mathematics and Natural Sciences
+                            (CMNS) , and the Extension Program PASA ...
                           </p>
                           <a href="#" class="btn btn-dark">Learn More</a>
                         </div>
@@ -373,206 +374,23 @@
                 <i class="bi bi-calendar mr-2"></i>Upcoming Events
               </h5>
             </div>
-            <div class="card-body">
-              <div class="event-border-left border-primary-left pl-3 mb-3">
-                <div class="font-weight-bold">Spring Break</div>
-                <small class="text-muted">March 25 - April 1</small>
-              </div>
-              <hr />
-              <div class="event-border-left border-info-left pl-3 mb-3">
-                <div class="font-weight-bold">Drama Club Performance</div>
-                <small class="text-muted">April 5, 7:00 PM</small>
-              </div>
-              <hr />
-              <div class="event-border-left border-success-left pl-3 mb-3">
-                <div class="font-weight-bold">College Fair</div>
-                <small class="text-muted">April 12, 10:00 AM</small>
-              </div>
-              <hr />
-              <div class="event-border-left border-warning-left pl-3 mb-3">
-                <div class="font-weight-bold">Spring Sports Tryouts</div>
-                <small class="text-muted">April 15-17</small>
-              </div>
-              <a href="#" class="btn btn-outline-dark btn-sm btn-block mt-3"
-                >View Full Calendar</a
-              >
+            <div class="card-body" id="events-container">
+              <!-- Events will be dynamically generated here -->
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Full Width Content Section -->
-      <div class="row">
-        <div class="col-12">
-          <!-- News Grid -->
-          <div class="row">
-            <!-- News Item 1 -->
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="card h-100">
-                <img
-                  src="assets/images/news-updates/news1.png"
-                  alt="Science fair"
-                  class="card-img-top news-card-image"
-                />
-                <div class="card-body d-flex flex-column">
-                  <div class="mb-2">
-                    <span class="badge badge-success mr-2">Press Release</span>
-                  </div>
-                  <h5 class="card-title">CSU Math Whizzes Seek to UnCOVER the Pandemic Situations in Caraga Region</h5>
-                  <p class="card-text text-muted mb-3 flex-grow-1">
-                    Mathematics researchers of the university put their minds together to uncover the challenging situations associated with the COVID-19 ...
-                  </p>
-                  <div class="mb-3">
-                    <small class="text-muted mr-3">
-                      <i class="bi bi-calendar mr-1"></i>Februrary 18, 2021
-                    </small>
-                  </div>
-                  <a href="https://www.carsu.edu.ph/csu-math-whizzes-seek-to-uncover-the-pandemic-situations-in-caraga-region/" class="btn btn-outline-dark btn-sm mt-auto"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- News Item 1 -->
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="card h-100">
-                <img
-                  src="assets/images/news-updates/news2.png"
-                  alt="Science fair"
-                  class="card-img-top news-card-image"
-                />
-                <div class="card-body d-flex flex-column">
-                  <div class="mb-2">
-                    <span class="badge badge-success mr-2">Press Release</span>
-                  </div>
-                  <h5 class="card-title">OVPRE Trains CSU Researchers on Writing for Journal Publication</h5>
-                  <p class="card-text text-muted mb-3 flex-grow-1">
-                    The Office of the Vice President for Research and Extension (OVPRE), through its Publication Unit trained forty-four (44) ...
-                  </p>
-                  <div class="mb-3">
-                    <small class="text-muted mr-3">
-                      <i class="bi bi-calendar mr-1"></i>June 29, 2018
-                    </small>
-                  </div>
-                  <a href="https://www.carsu.edu.ph/ovpre-trains-csu-researchers-on-writing-for-journal-publication/" class="btn btn-outline-dark btn-sm mt-auto"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div><!-- News Item 1 -->
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="card h-100">
-                <img
-                  src="assets/images/news-updates/news3.png"
-                  alt="Science fair"
-                  class="card-img-top news-card-image"
-                />
-                <div class="card-body d-flex flex-column">
-                  <div class="mb-2">
-                    <span class="badge badge-success mr-2">Press Release</span>
-                  </div>
-                  <h5 class="card-title">CSU Launches Utility of the New CAS Multipurpose Building</h5>
-                  <p class="card-text text-muted mb-3 flex-grow-1">
-                    Caraga State University has recently launched the left wing of its new multi-purpose building as Phase 1 of ...
-                  </p>
-                  <div class="mb-3">
-                    <small class="text-muted mr-3">
-                      <i class="bi bi-calendar mr-1"></i>February 14, 2018
-                    </small>
-                  </div>
-                  <a href="https://www.carsu.edu.ph/csu-launches-utility-of-the-new-cas-multipurpose-building/" class="btn btn-outline-dark btn-sm mt-auto"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- News Item 1 -->
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="card h-100">
-                <img
-                  src="assets/images/news-updates/news4.png"
-                  alt="Science fair"
-                  class="card-img-top news-card-image"
-                />
-                <div class="card-body d-flex flex-column">
-                  <div class="mb-2">
-                    <span class="badge badge-success mr-2">Press Release</span>
-                  </div>
-                  <h5 class="card-title">CSU Participates 2nd International Conference on INREM</h5>
-                  <p class="card-text text-muted mb-3 flex-grow-1">
-                    Five (5) faculty members of Caraga State University (CSU) participated the 2nd International Conference on Integrated Natural Resources and Environmental Management (INREM 2019) ...
-                  </p>
-                  <div class="mb-3">
-                    <small class="text-muted mr-3">
-                      <i class="bi bi-calendar mr-1"></i>November 20 – 22, 2019
-                    </small>
-                  </div>
-                  <a href="https://www.carsu.edu.ph/csu-math-whizzes-seek-to-uncover-the-pandemic-situations-in-caraga-region/" class="btn btn-outline-dark btn-sm mt-auto"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- News Item 1 -->
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="card h-100">
-                <img
-                  src="assets/images/news-updates/news5.png"
-                  alt="Science fair"
-                  class="card-img-top news-card-image"
-                />
-                <div class="card-body d-flex flex-column">
-                  <div class="mb-2">
-                    <span class="badge badge-success mr-2">Press Release</span>
-                  </div>
-                  <h5 class="card-title">Two CSU Faculty Bag Best Paper Awards in International Conferences</h5>
-                  <p class="card-text text-muted mb-3 flex-grow-1">
-                    The event was held in Westin Resort Hotel, Guam, USA last October 31 to November 3, 2018. She presented her paper entitled “Characterization of Selected Hybrids of Abaca (Musa textilis Nee) For Resistance to Bunchy Top ...
-                  </p>
-                  <div class="mb-3">
-                    <small class="text-muted mr-3">
-                      <i class="bi bi-calendar mr-1"></i>November 3, 2018
-                    </small>
-                  </div>
-                  <a href="https://www.carsu.edu.ph/two-csu-faculty-bag-best-paper-awards-in-international-conferences/"class="btn btn-outline-dark btn-sm mt-auto"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- News Item 1 -->
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="card h-100">
-                <img
-                  src="assets/images/news-updates/news6.png"
-                  alt="Science fair"
-                  class="card-img-top news-card-image"
-                />
-                <div class="card-body d-flex flex-column">
-                  <div class="mb-2">
-                    <span class="badge badge-success mr-2">Press Release</span>
-                  </div>
-                  <h5 class="card-title">CSU Teams Up with UTM in STEM</h5>
-                  <p class="card-text text-muted mb-3 flex-grow-1">
-                    The CSU party was met by Prof. Dr. Abdull Rahim Mohd Yusoff, the Dean of the Faculty of Science, Prof. Dr. Fadhilah Yusof, Department of Mathematics Chairperson, and the rest of the management committee of the Faculty of Science ...
-                  </p>
-                  <div class="mb-3">
-                    <small class="text-muted mr-3">
-                      <i class="bi bi-calendar mr-1"></i>July 18, 2019
-                    </small>
-                  </div>
-                  <a href="https://www.carsu.edu.ph/two-csu-faculty-bag-best-paper-awards-in-international-conferences/"class="btn btn-outline-dark btn-sm mt-auto"
-                    >Read More</a
-                  >
-                </div>
-              </div>
+        <!-- Full Width Content Section -->
+        <div class="row">
+          <div class="col-12">
+            <!-- News Grid -->
+            <div class="row" id="news-container">
+              <!-- News Items-->
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <footer class="bg-dark text-white py-3 mt-auto sticky-footer">
       <div class="container d-flex align-items-center">
         <div class="quick-links-label">QUICK LINKS</div>
